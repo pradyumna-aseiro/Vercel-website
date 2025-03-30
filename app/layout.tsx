@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata = {
   title: "Aseiro Industries – Machine Vision & Automation",
   description: "Tailored machine vision and robotics solutions for industrial quality control.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
