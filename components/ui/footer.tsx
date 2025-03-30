@@ -9,8 +9,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Aseiro Industries Pvt Ltd. All rights reserved.
             <div className="mt-2 text-gray-500">
-              Email: <a href="mailto:contact@aseiro.in" className="underline">contact@aseiro.in</a><br />
-              Phone: <a href="tel:+919000000000" className="underline">+91 90000 00000</a>
+              Email: <a href="mailto:subbarao@aseiro.in" className="underline">subbarao@aseiro.in</a><br />
+              Phone: <a href="tel:+917013538726" className="underline">+91 </a>
             </div>
           </div>
           <div className="flex flex-wrap gap-4">
