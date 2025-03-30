@@ -31,8 +31,8 @@ export default function IndustryPartners() {
           <Image
             src={src}
             alt={`Partner ${idx + 1}`}
-            width={120}
-            height={60}
+            width={200}
+            height={100}
             className="object-contain"
           />
         </div>
