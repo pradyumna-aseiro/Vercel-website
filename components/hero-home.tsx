@@ -20,7 +20,7 @@ export default function HeroHome() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
-              href="mailto:contact@aseiro.in"
+              href="mailto:subbarao@aseiro.in"
             >
               Contact Us →
             </a>
@@ -43,9 +43,6 @@ export default function HeroHome() {
             className="rounded-xl w-full object-cover shadow-xl"
             priority
           />
-          <p className="text-center text-lg mt-4 font-semibold text-gray-700">
-            See more. Do more.
-          </p>
         </div>
       </div>
     </section>
