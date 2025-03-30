@@ -12,24 +12,16 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
-              >
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
-              >
-                Register
-              </Link>
-            </li>
+          <ul className="flex grow flex-wrap items-center justify-end gap-4">
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/">Home</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/products">Products</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/industries">Industries</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/solutions">Solutions</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/resources">Resources</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/about">About</Link></li>
+            <li><Link className="font-medium text-gray-600 hover:text-gray-900" href="/contact">Contact</Link></li>
           </ul>
+
         </div>
       </div>
     </header>
