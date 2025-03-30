@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Industry Partners Slider */}
       <section className="py-20 px-4 bg-slate-50 text-center">
-        <h2 className="text-3xl font-bold mb-4">Trusted By</h2>
+        <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
         <IndustryPartners />
       </section>
 
