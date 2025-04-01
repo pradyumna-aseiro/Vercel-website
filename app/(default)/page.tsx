@@ -29,8 +29,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Our Products</h2>
         <p className="text-gray-600 mb-12">
-          Explore cutting-edge automation and vision systems built for your
-          factory floor.
+          Explore cutting-edge automation and vision systems built for your need
         </p>
 
         <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
