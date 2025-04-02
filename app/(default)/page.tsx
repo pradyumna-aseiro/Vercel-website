@@ -122,33 +122,51 @@ export default function Home() {
               <p>
                 High-speed inspection systems tailored to each production line.
                 We develop solutions to automate printing inspection, product sorting, and rejection
-                mechanisms using cameras, sensors, and actuators—ensuring accuracy and repeatability.
+                mechanisms using cameras, sensors, and pneumatics—ensuring accuracy and repeatability.
               </p>
             </div>
           </div>
 
           {/* Solution 2: Dimensional Measurement */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition p-6">
-            <h3 className="text-xl font-bold text-blue-600 mb-2">
-              Dimensional Measurement Systems
-            </h3>
-            <p>
-              Using cameras and laser-based systems, we help manufacturers
-              verify dimensional tolerances of products on production lines in real time.
-              Ideal for QA/QC workflows, reducing rejects and maintaining consistency.
-            </p>
+          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <Image
+              src="/images/dimensional-measurement.png"
+              alt="Dimensional Measurement Systems"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-blue-600 mb-2">
+                Dimensional Measurement Systems
+              </h3>
+              <p>
+                Using cameras and laser-based systems, we help manufacturers
+                verify dimensional tolerances of products on production lines in real time.
+                Ideal for QA/QC workflows, reducing rejects and maintaining consistency.
+              </p>
+            </div>
           </div>
 
           {/* Solution 3: Industrial Automation */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition p-6">
-            <h3 className="text-xl font-bold text-blue-600 mb-2">
-              Industrial Automation & Instrumentation
-            </h3>
-            <p>
-              We build custom industrial automation solutions using PLCs, HMIs, and sensor networks.
-              Solutions include process automation, control system design, SCADA integration,
-              real-time monitoring, and data-driven decision making to boost operational efficiency.
-            </p>
+          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <Image
+              src="/images/plc-hmi-automation.png"
+              alt="Industrial Automation & Instrumentation"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-blue-600 mb-2">
+                Industrial Automation & Instrumentation
+              </h3>
+              <p>
+                We build custom industrial automation solutions using PLCs, HMIs, and sensor networks.
+                Solutions include process automation, control system design, SCADA integration,
+                real-time monitoring, and data-driven decision making to boost operational efficiency.
+              </p>
+            </div>
           </div>
         </div>
       </section>
