@@ -7,7 +7,7 @@ export default function HeroHome() {
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero Section */}
-        <div className="pb-12 pt-32 md:pb-20 md:pt-40 text-center">
+        <div className="pb-12 pt-32 md:pb-20 md:pt-40 text-left">
           <h1 className="mb-6 text-5xl font-extrabold leading-tighter tracking-tighter md:text-6xl">
             See More with Vision <br className="hidden md:inline" />
             Do More with Automation
