@@ -131,6 +131,46 @@ export default function Home() {
           </div>
         </div>
 
+        {/* 4. Industrial Robots for Shopfloor */}
+        <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+          <Image
+            src="/images/industrial-robots.png"
+            alt="Industrial Robots for Shopfloor"
+            width={600}
+            height={400}
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-blue-600 mb-2">
+              Industrial Robots for Shopfloor
+            </h3>
+            <p>
+              Custom robotic systems that streamline repetitive tasks such as pick & place,
+              assembly, and material handling—enhancing accuracy and safety.
+            </p>
+          </div>
+        </div>
+
+        {/* 5. Warehouse Automation */}
+        <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+          <Image
+            src="/images/warehouse-automation.png"
+            alt="Warehouse Automation"
+            width={600}
+            height={400}
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-blue-600 mb-2">
+              Warehouse Automation
+            </h3>
+            <p>
+              Mobile robots and smart inventory systems for faster order fulfillment,
+              logistics automation, and reduced manual effort.
+            </p>
+          </div>
+        </div>
+
         <div className="mt-10">
           <Link href="/solutions">
             <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300">
