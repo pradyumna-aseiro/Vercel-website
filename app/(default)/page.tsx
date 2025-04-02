@@ -168,6 +168,7 @@ export default function Home() {
                 logistics automation, and reduced manual effort.
               </p>
             </div>
+          </div>
         </div>
 
         <div className="mt-10">
