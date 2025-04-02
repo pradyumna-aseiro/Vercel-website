@@ -153,16 +153,16 @@ export default function Home() {
             const form = e.target as HTMLFormElement;
 
             const data = {
-              name: form.name.value,
-              email: form.email.value,
-              phone: form.phone.value,
-              company: form.company.value,
-              requirement: form.requirement.value,
-              call_time: form.call_time.value,
+              name: (form.elements.namedItem("name") as HTMLInputElement).value,
+              email: (form.elements.namedItem("email") as HTMLInputElement).value,
+              phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+              company: (form.elements.namedItem("company") as HTMLInputElement).value,
+              requirement: (form.elements.namedItem("requirement") as HTMLTextAreaElement).value,
+              call_time: (form.elements.namedItem("call_time") as HTMLInputElement).value,
             };
 
             try {
-              const response = await fetch("https://script.google.com/macros/s/YOUR_WEB_APP_URL/exec", {
+              const response = await fetch("https://script.google.com/macros/s/AKfycbz8-S3po1m2kWM1pQn6ZI6XmewyQVRCy-TFlYFmPgkhb_ZdPyS19EwoehEO5t-wxg3_/exec", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
