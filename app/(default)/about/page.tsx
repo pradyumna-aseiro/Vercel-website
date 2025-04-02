@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <section className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto space-y-16 text-left">
+    <section className="py-20 px-4 bg-white text-left">
+      <div className="max-w-6xl mx-auto pt-32">
         {/* Intro Section */}
         <div>
           <h1 className="text-4xl font-bold mb-6">About Aseiro Industries</h1>
