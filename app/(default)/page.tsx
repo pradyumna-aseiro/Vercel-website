@@ -32,13 +32,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
           {/* Machine Vision */}
           <div className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-            <div className="w-full relative aspect-[4/3] bg-white">
+            <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
               <Image
                 src="/images/aseiro-camera-product.png"
                 alt="Machine Vision Products"
-                width={500}
-                height={750}
-                className="w-full h-64 object-cover object-center rounded-t-xl"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             </div>
             <div className="p-6">
@@ -62,12 +62,13 @@ export default function Home() {
 
           {/* AMRs */}
           <div className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-            <div className="w-full relative aspect-[4/3] bg-white">
+            <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
               <Image
                 src="/images/aseiro-amr-product.png"
                 alt="Autonomous Mobile Robots"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
+                objectPosition="center"
               />
             </div>
             <div className="p-6">
