@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/hero-home";
 import IndustryPartners from "@/components/industry-partners";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/contact-form";
 
 const products = [
   {
