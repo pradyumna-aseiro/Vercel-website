@@ -22,7 +22,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Products Overview */}
+      {/* Products Section */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Our Products</h2>
         <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -30,63 +30,26 @@ export default function Home() {
         </p>
 
         <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
-          {/* Machine Vision */}
-          <div className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-            <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
-              <Image
-                src="/images/aseiro-camera-product.png"
-                alt="Machine Vision Products"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
+          {products.map((product, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+            >
+              <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-600 mb-2">{product.name}</h3>
+                <p className="text-gray-700 text-sm mb-3">{product.description}</p>
+              </div>
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Machine Vision Products
-              </h3>
-              <p className="text-gray-700 text-sm mb-3">
-                Precision imaging hardware and smart systems tailored for
-                manufacturing, packaging, and inspection.
-              </p>
-              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-                <li>Area Scan, Line Scan, and Infrared Cameras</li>
-                <li>Smart Cameras with onboard processing</li>
-                <li>3D Vision Systems (Line Laser, RGB-D)</li>
-                <li>Vision Controllers and Box PCs</li>
-                <li>High-speed Smart Code Readers</li>
-                <li>FA & M12 Lenses, Filters, and Light Sources</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* AMRs */}
-          <div className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-            <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
-              <Image
-                src="/images/aseiro-amr-product.png"
-                alt="Autonomous Mobile Robots"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Autonomous Mobile Robots (AMRs)
-              </h3>
-              <p className="text-gray-700 text-sm mb-3">
-                Flexible robotic platforms for intralogistics, with navigation and task automation.
-              </p>
-              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-                <li>Latent Mobile Robots (LMRs) – Under-load movement</li>
-                <li>Forklift AMRs (FMRs) – Palletized transport</li>
-                <li>Collaborative Mobile Robots (CMRs)</li>
-                <li>Vision-based navigation, SLAM, and auto-charging</li>
-                <li>Fleet scheduling, WMS/ERP integration</li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-10">
@@ -98,7 +61,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solutions */}
+      {/* Solutions Section */}
       <section className="py-20 px-4 bg-slate-50 text-center">
         <h2 className="text-3xl font-bold mb-4">Solutions</h2>
         <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -106,7 +69,7 @@ export default function Home() {
         </p>
 
         <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3 text-left text-gray-700">
-          {/* Solution 1: Printing Inspection */}
+          {/* 1. Printing Inspection */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/images/printing-inspection-rejection.png"
@@ -120,14 +83,13 @@ export default function Home() {
                 Custom Machine Vision Solutions
               </h3>
               <p>
-                High-speed inspection systems tailored to each production line.
-                We develop solutions to automate printing inspection, product sorting, and rejection
-                mechanisms using cameras, sensors, and pneumatics—ensuring accuracy and repeatability.
+                Tailored solutions for printing inspection, sorting, and rejection using
+                high-speed cameras, sensors, and pneumatics.
               </p>
             </div>
           </div>
 
-          {/* Solution 2: Dimensional Measurement */}
+          {/* 2. Dimensional Measurement */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/images/dimensional-measurement.png"
@@ -141,14 +103,13 @@ export default function Home() {
                 Dimensional Measurement Systems
               </h3>
               <p>
-                Using cameras and laser-based systems, we help manufacturers
-                verify dimensional tolerances of products on production lines in real time.
-                Ideal for QA/QC workflows, reducing rejects and maintaining consistency.
+                Real-time measurement of product tolerances on manufacturing lines using
+                cameras and laser technology.
               </p>
             </div>
           </div>
 
-          {/* Solution 3: Industrial Automation */}
+          {/* 3. Industrial Automation */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/images/plc-hmi-automation.png"
@@ -162,16 +123,63 @@ export default function Home() {
                 Industrial Automation & Instrumentation
               </h3>
               <p>
-                We build custom industrial automation solutions using PLCs, HMIs, and sensor networks.
-                Solutions include process automation, control system design, SCADA integration,
-                real-time monitoring, and data-driven decision making to boost operational efficiency.
+                Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process
+                control, monitoring, and data-driven decisions.
+              </p>
+            </div>
+          </div>
+
+          {/* 4. Industrial Robots for Shopfloor */}
+          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <Image
+              src="/images/industrial-robots.png"
+              alt="Industrial Robots for Shopfloor"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-blue-600 mb-2">
+                Industrial Robots for Shopfloor
+              </h3>
+              <p>
+                Custom robotic systems that streamline repetitive tasks such as pick & place,
+                assembly, and material handling—enhancing accuracy and safety.
+              </p>
+            </div>
+          </div>
+
+          {/* 5. Warehouse Automation */}
+          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <Image
+              src="/images/warehouse-automation.png"
+              alt="Warehouse Automation"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-blue-600 mb-2">
+                Warehouse Automation
+              </h3>
+              <p>
+                Mobile robots and smart inventory systems for faster order fulfillment,
+                logistics automation, and reduced manual effort.
               </p>
             </div>
           </div>
         </div>
+
+        <div className="mt-10">
+          <Link href="/solutions">
+            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300">
+              Read more
+            </a>
+          </Link>
+        </div>
       </section>
 
-      {/* Consulting Services */}
+      {/* Consulting Section */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Consulting & Implementation</h2>
         <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -180,20 +188,20 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Industry Partners Slider */}
+      {/* Industry Partners */}
       <section className="py-20 px-4 bg-slate-50 text-center">
         <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
         <IndustryPartners />
       </section>
 
-      {/* Blog / News */}
+      {/* Blog */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Latest Insights</h2>
         <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
           News, tutorials, and thought leadership from the world of automation
           and vision.
         </p>
-        {/* Future blog component here */}
+        {/* Blog placeholder */}
       </section>
     </>
   );
