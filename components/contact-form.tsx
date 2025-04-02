@@ -20,11 +20,15 @@ export default function ContactForm() {
       call_time: (form.elements.namedItem("call_time") as HTMLInputElement).value,
     };
 
+    const formData = new URLSearchParams(data).toString();
+    
     try {
       const res = await fetch("https://script.google.com/macros/s/AKfycbz8-S3po1m2kWM1pQn6ZI6XmewyQVRCy-TFlYFmPgkhb_ZdPyS19EwoehEO5t-wxg3_/exec", {
         method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formData,
       });
 
       const result = await res.json();
