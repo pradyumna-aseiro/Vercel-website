@@ -36,9 +36,9 @@ export default function Home() {
               <Image
                 src="/images/aseiro-camera-product.png"
                 alt="Machine Vision Products"
-                width={500}
+                width={600}
                 height={400}
-                className="w-full h-64 object-cover object-center rounded-t-xl"
+                className="w-full h-60 object-cover"
               />
             </div>
             <div className="p-6">
