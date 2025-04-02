@@ -9,13 +9,13 @@ const products = [
     name: "Machine Vision Products",
     description:
       "High-performance cameras, lenses, and vision systems for precise industrial inspection and automation.",
-    image: "../../public/images/aseiro-camera-product.jpg",
+    image: "/images/aseiro-camera-product.png",
   },
   {
     name: "Autonomous Mobile Robots (AMRs)",
     description:
       "Intelligent robots for seamless material movement in warehouses and smart factories.",
-    image: "../../public/images/aseiro-amr-product.jpg",
+    image: "/images/aseiro-amr-product.png",
   },
 ];
 
