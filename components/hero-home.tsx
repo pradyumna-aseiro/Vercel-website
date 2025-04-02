@@ -13,9 +13,7 @@ export default function HeroHome() {
             Do More with Automation
           </h1>
           <p className="max-w-3xl text-xl text-slate-500 mb-8 text-left">
-            Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced
-            factories, eliminating human error and ensuring consistent product quality through
-            smart automation.
+            Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced factories, eliminating human error and ensuring consistent product quality through smart automation.
           </p>
           <div className="flex flex-col sm:flex-row justify-start gap-4">
             <a
