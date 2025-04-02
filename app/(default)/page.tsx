@@ -6,14 +6,12 @@ import IndustryPartners from "@/components/industry-partners";
 const products = [
   {
     name: "Machine Vision Products",
-    description:
-      "High-performance cameras, lenses, and vision systems for precise industrial inspection and automation.",
+    description: `High-performance area scan, line scan, and infrared cameras, smart code readers, 3D vision systems, FA lenses, and lighting — designed for accurate industrial inspection and automation.`,
     image: "/images/aseiro-camera-product.png",
   },
   {
     name: "Autonomous Mobile Robots (AMRs)",
-    description:
-      "Intelligent robots for seamless material movement in warehouses and smart factories.",
+    description: `Flexible robots for intelligent intralogistics. Options include Latent Mobile Robots (LMRs), Forklift-style (FMRs), and Collaborative (CMRs), with navigation, docking, and fleet scheduling.`,
     image: "/images/aseiro-amr-product.png",
   },
 ];
@@ -27,26 +25,28 @@ export default function Home() {
       {/* Products Overview */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Our Products</h2>
-        <p className="text-gray-600 mb-12">
-          Automation and vision systems built for your need
+        <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
+          Explore advanced automation and vision systems built for your industrial needs.
         </p>
 
-        <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8">
+        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
           {products.map((product, index) => (
             <div
               key={index}
-              className="w-full sm:w-[300px] bg-gray-50 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden"
             >
               <Image
                 src={product.image}
                 alt={product.name}
-                width={400}
-                height={300}
-                className="w-full h-48 object-cover rounded-t-xl"
+                width={600}
+                height={400}
+                className="w-full h-60 object-cover"
               />
-              <div className="p-4 text-left">
-                <h3 className="text-lg font-semibold">{product.name}</h3>
-                <p className="text-sm text-gray-600 mt-2">{product.description}</p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-600 mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-gray-700 text-sm">{product.description}</p>
               </div>
             </div>
           ))}
@@ -69,7 +69,6 @@ export default function Home() {
         </p>
 
         <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3 text-left text-gray-700">
-          
           {/* Solution 1: Printing Inspection */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
@@ -117,15 +116,13 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Consulting Services */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Consulting & Implementation</h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
           We help factories identify bottlenecks and implement scalable
-          automation solutions.
+          automation and vision solutions tailored to production goals.
         </p>
-        {/* Optional: CTA or step-wise consulting flow */}
       </section>
 
       {/* Industry Partners Slider */}
@@ -137,11 +134,11 @@ export default function Home() {
       {/* Blog / News */}
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Latest Insights</h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
           News, tutorials, and thought leadership from the world of automation
           and vision.
         </p>
-        {/* TODO: Blog cards */}
+        {/* Future blog component here */}
       </section>
     </>
   );
