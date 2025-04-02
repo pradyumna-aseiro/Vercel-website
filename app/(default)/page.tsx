@@ -128,46 +128,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          {/* 4. Industrial Robots for Shopfloor */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/images/industrial-robots.png"
-              alt="Industrial Robots for Shopfloor"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Industrial Robots for Shopfloor
-              </h3>
-              <p>
-                Custom robotic systems that streamline repetitive tasks such as pick & place,
-                assembly, and material handling—enhancing accuracy and safety.
-              </p>
-            </div>
-          </div>
-
-          {/* 5. Warehouse Automation */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/images/warehouse-automation.png"
-              alt="Warehouse Automation"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Warehouse Automation
-              </h3>
-              <p>
-                Mobile robots and smart inventory systems for faster order fulfillment,
-                logistics automation, and reduced manual effort.
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="mt-10">
@@ -177,6 +137,83 @@ export default function Home() {
             </a>
           </Link>
         </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-4 bg-slate-100 text-center">
+        <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals. Describe your requirement and schedule a call with our expert.
+        </p>
+
+        <form
+          className="max-w-2xl mx-auto text-left space-y-6 bg-white p-8 rounded-xl shadow"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const form = e.target as HTMLFormElement;
+
+            const data = {
+              name: form.name.value,
+              email: form.email.value,
+              phone: form.phone.value,
+              company: form.company.value,
+              requirement: form.requirement.value,
+              call_time: form.call_time.value,
+            };
+
+            try {
+              const response = await fetch("https://script.google.com/macros/s/YOUR_WEB_APP_URL/exec", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+
+              const result = await response.json();
+              if (result.result === "success") {
+                alert("Thank you! Your message has been submitted.");
+                form.reset();
+              } else {
+                alert("Something went wrong. Please try again.");
+              }
+            } catch (error) {
+              alert("Error submitting form. Please try again.");
+              console.error("Form submission error:", error);
+            }
+          }}
+        >
+          <div>
+            <label className="block font-medium mb-1">Name</label>
+            <input type="text" name="name" required className="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+          <div>
+            <label className="block font-medium mb-1">Email</label>
+            <input type="email" name="email" required className="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+          <div>
+            <label className="block font-medium mb-1">Phone</label>
+            <input type="tel" name="phone" required className="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+          <div>
+            <label className="block font-medium mb-1">Company Name</label>
+            <input type="text" name="company" className="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+          <div>
+            <label className="block font-medium mb-1">Your Requirement</label>
+            <textarea name="requirement" rows={4} required className="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+          </div>
+          <div>
+            <label className="block font-medium mb-1">Preferred Call Time</label>
+            <input type="text" name="call_time" className="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+
+          <div className="text-center">
+            <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition">
+              Submit
+            </button>
+          </div>
+        </form>
       </section>
 
       {/* Consulting Section */}
@@ -201,7 +238,6 @@ export default function Home() {
           News, tutorials, and thought leadership from the world of automation
           and vision.
         </p>
-        {/* Blog placeholder */}
       </section>
     </>
   );
