@@ -184,14 +184,6 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      {/* Consulting Section */}
-      <section className="py-20 px-4 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Consulting & Implementation</h2>
-        <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
-          We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals.
-        </p>
-      </section>
-
       {/* Industry Partners */}
       <section className="py-20 px-4 bg-slate-50 text-center">
         <h2 className="text-3xl font-bold mb-4">Our Partners</h2>

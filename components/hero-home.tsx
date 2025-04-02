@@ -12,12 +12,12 @@ export default function HeroHome() {
             See More with Vision <br className="hidden md:inline" />
             Do More with Automation
           </h1>
-          <p className="mx-auto max-w-3xl text-xl text-slate-500 mb-8">
+          <p className="max-w-3xl text-xl text-slate-500 mb-8 text-left">
             Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced
             factories, eliminating human error and ensuring consistent product quality through
             smart automation.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-start gap-4">
             <a
               className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
               href="mailto:subbarao@aseiro.in"
