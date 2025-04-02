@@ -84,8 +84,7 @@ export default function Home() {
                 Custom Machine Vision Solutions
               </h3>
               <p>
-                Tailored solutions for printing inspection, sorting, and rejection using
-                high-speed cameras, sensors, and pneumatics.
+                Tailored solutions for printing inspection, sorting, and rejection using high-speed cameras, sensors, and pneumatics.
               </p>
             </div>
           </div>
@@ -104,8 +103,7 @@ export default function Home() {
                 Dimensional Measurement Systems
               </h3>
               <p>
-                Real-time measurement of product tolerances on manufacturing lines using
-                cameras and laser technology.
+                Real-time measurement of product tolerances on manufacturing lines using cameras and laser technology.
               </p>
             </div>
           </div>
@@ -124,8 +122,7 @@ export default function Home() {
                 Industrial Automation & Instrumentation
               </h3>
               <p>
-                Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process
-                control, monitoring, and data-driven decisions.
+                Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process control, monitoring, and data-driven decisions.
               </p>
             </div>
           </div>
@@ -144,8 +141,7 @@ export default function Home() {
                 Industrial Robots for Shopfloor
               </h3>
               <p>
-                Custom robotic systems that streamline repetitive tasks such as pick & place,
-                assembly, and material handling—enhancing accuracy and safety.
+                Custom robotic systems that streamline repetitive tasks such as pick & place, assembly, and material handling—enhancing accuracy and safety.
               </p>
             </div>
           </div>
@@ -164,8 +160,7 @@ export default function Home() {
                 Warehouse Automation
               </h3>
               <p>
-                Mobile robots and smart inventory systems for faster order fulfillment,
-                logistics automation, and reduced manual effort.
+                Mobile robots and smart inventory systems for faster order fulfillment, logistics automation, and reduced manual effort.
               </p>
             </div>
           </div>
@@ -193,8 +188,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Consulting & Implementation</h2>
         <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
-          We help factories identify bottlenecks and implement scalable
-          automation and vision solutions tailored to production goals.
+          We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals.
         </p>
       </section>
 
@@ -208,8 +202,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white text-center">
         <h2 className="text-3xl font-bold mb-4">Latest Insights</h2>
         <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
-          News, tutorials, and thought leadership from the world of automation
-          and vision.
+          News, tutorials, and thought leadership from the world of automation and vision.
         </p>
       </section>
     </>

@@ -9,8 +9,8 @@ export default function HeroHome() {
         {/* Hero Section */}
         <div className="pb-12 pt-32 md:pb-20 md:pt-40 text-center">
           <h1 className="mb-6 text-5xl font-extrabold leading-tighter tracking-tighter md:text-6xl">
-            Revolutionizing Quality Control with <br className="hidden md:inline" />
-            Smart Vision Systems
+            See More with Vision <br className="hidden md:inline" />
+            Do More with Automation
           </h1>
           <p className="mx-auto max-w-3xl text-xl text-slate-500 mb-8">
             Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced
