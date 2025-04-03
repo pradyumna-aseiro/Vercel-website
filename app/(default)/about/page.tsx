@@ -42,9 +42,9 @@ export default function AboutPage() {
             <Image
               src="/images/team-abhijeet.png"
               alt="Abhijeet Madnurkar"
-              width={100}
-              height={100}
-              className="rounded-full object-cover w-[100px] h-[100px] shrink-0"
+              width={120}
+              height={120}
+              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
             />
             <div>
               <h3 className="text-xl font-semibold">Abhijeet Madnurkar</h3>
@@ -64,9 +64,9 @@ export default function AboutPage() {
             <Image
               src="/images/team-pradyumna.png"
               alt="Pradyumna Madnurkar"
-              width={100}
-              height={100}
-              className="rounded-full object-cover w-[100px] h-[100px] shrink-0"
+              width={120}
+              height={120}
+              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
             />
             <div>
               <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>

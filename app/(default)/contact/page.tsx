@@ -11,12 +11,12 @@ export default function ContactPage() {
     const form = e.currentTarget;
 
     const data = {
-        name: (form.elements.namedItem("name") as HTMLInputElement).value,
-        email: (form.elements.namedItem("email") as HTMLInputElement).value,
-        phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
-        company: (form.elements.namedItem("company") as HTMLInputElement).value,
-        requirement: (form.elements.namedItem("requirement") as HTMLTextAreaElement).value,
-        call_time: (form.elements.namedItem("call_time") as HTMLInputElement).value,
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      company: (form.elements.namedItem("company") as HTMLInputElement).value,
+      requirement: (form.elements.namedItem("requirement") as HTMLTextAreaElement).value,
+      call_time: (form.elements.namedItem("call_time") as HTMLInputElement).value,
     };
 
     try {
@@ -118,6 +118,21 @@ export default function ContactPage() {
           </div>
         </form>
       )}
+
+      {/* Google Map Section */}
+      <div className="mt-20">
+        <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
+        <p className="text-gray-600 mb-6">1st Floor, Marredpally, P.No.2, F, Street Number 10, Nehru Nagar Colony, Secunderabad, Hyderabad, Telangana 500026</p>
+        <div className="w-full max-w-5xl mx-auto aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            className="w-full h-full border-0"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.277627364696!2d78.5082633!3d17.4464212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bdf81786025%3A0xe069601482f8891!2sAseiro%20Industries%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1743678632918!5m2!1sen!2sin"
+          ></iframe>
+        </div>
+      </div>
     </section>
   );
 }
