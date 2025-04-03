@@ -122,7 +122,7 @@ export default function ContactPage() {
       {/* Google Map Section */}
       <div className="mt-20">
         <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
-        <p className="text-gray-600 mb-6">1st Floor, Marredpally, P.No.2, F, Street Number 10, Nehru Nagar Colony, Secunderabad, Hyderabad, Telangana 500026</p>
+        <p className="text-gray-600 mb-6">Meet us at our office in Secunderabad, Hyderabad</p>
         <div className="w-full max-w-5xl mx-auto aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full border-0"

@@ -82,6 +82,29 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
+
+          {/* Subbarao */}
+          <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
+            <Image
+              src="/images/team-subbarao.png"
+              alt="Subbarao"
+              width={120}
+              height={120}
+              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
+            />
+            <div>
+              <h3 className="text-xl font-semibold">Subbarao</h3>
+              <p className="text-gray-600 text-sm mb-2">Business Development</p>
+              <p className="text-gray-500 text-sm">
+              With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
+              brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
+              machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
+              development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
+              Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
+              Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Mission & Vision */}
