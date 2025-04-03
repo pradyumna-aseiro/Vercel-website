@@ -60,7 +60,7 @@ export default function AboutPage() {
           </div>
 
           {/* Pradyumna */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-6">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-12">
             <Image
               src="/team/team-pradyumna.png"
               alt="Pradyumna Madnurkar"
@@ -72,13 +72,13 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>
               <p className="text-gray-600 text-sm mb-2">Co-Founder & Robotics Engineer</p>
               <p className="text-gray-500 text-sm">
-              With a Master’s in Robotics from the University of Sheffield and hands-on experience 
-              at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
-              end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
-              automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
-              Visa, his vision is to scale Aseiro into a global provider of machine vision and 
-              automation solutions. At Aseiro, he leads the development of intelligent robotic and 
-              vision systems tailored to the evolving needs of modern manufacturing.
+                With a Master’s in Robotics from the University of Sheffield and hands-on experience 
+                at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
+                end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
+                automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
+                Visa, his vision is to scale Aseiro into a global provider of machine vision and 
+                automation solutions. At Aseiro, he leads the development of intelligent robotic and 
+                vision systems tailored to the evolving needs of modern manufacturing.
               </p>
             </div>
           </div>
@@ -96,12 +96,12 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold">Subbarao</h3>
               <p className="text-gray-600 text-sm mb-2">Business Development</p>
               <p className="text-gray-500 text-sm">
-              With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
-              brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
-              machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
-              development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
-              Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
-              Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
+                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
+                brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
+                machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
+                development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
+                Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
+                Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
               </p>
             </div>
           </div>
