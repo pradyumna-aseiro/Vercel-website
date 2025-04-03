@@ -40,7 +40,7 @@ export default function AboutPage() {
           {/* Abhijeet */}
           <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
             <Image
-              src="/images/team-abhijeet.png"
+              src="/team/team-abhijeet.png"
               alt="Abhijeet Madnurkar"
               width={120}
               height={120}
@@ -62,7 +62,7 @@ export default function AboutPage() {
           {/* Pradyumna */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <Image
-              src="/images/team-pradyumna.png"
+              src="/team/team-pradyumna.png"
               alt="Pradyumna Madnurkar"
               width={120}
               height={120}
@@ -86,7 +86,7 @@ export default function AboutPage() {
           {/* Subbarao */}
           <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
             <Image
-              src="/images/team-subbarao.png"
+              src="/team/team-subbarao.png"
               alt="Subbarao"
               width={120}
               height={120}

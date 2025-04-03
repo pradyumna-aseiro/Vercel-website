@@ -8,12 +8,12 @@ const products = [
   {
     name: "Machine Vision Products",
     description: `High-performance area scan, line scan, and infrared cameras, smart code readers, 3D vision systems, FA lenses, and lighting — designed for accurate industrial inspection and automation.`,
-    image: "/images/aseiro-camera-product.png",
+    image: "/products/aseiro-camera-product.png",
   },
   {
     name: "Autonomous Mobile Robots (AMRs)",
     description: `Flexible robots for intelligent intralogistics. Options include Latent Mobile Robots (LMRs), Forklift-style (FMRs), and Collaborative (CMRs), with navigation, docking, and fleet scheduling.`,
-    image: "/images/aseiro-amr-product.png",
+    image: "/products/aseiro-amr-product.png",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Home() {
           {/* 1. Printing Inspection */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
-              src="/images/printing-inspection-rejection.png"
+              src="/solutions/printing-inspection-rejection.png"
               alt="Printing Inspection System"
               width={600}
               height={400}
@@ -92,7 +92,7 @@ export default function Home() {
           {/* 2. Dimensional Measurement */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
-              src="/images/dimensional-measurement.png"
+              src="/solutions/dimensional-measurement.png"
               alt="Dimensional Measurement Systems"
               width={600}
               height={400}
@@ -111,7 +111,7 @@ export default function Home() {
           {/* 3. Industrial Automation */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
-              src="/images/plc-hmi-automation.png"
+              src="/solutions/plc-hmi-automation.png"
               alt="Industrial Automation & Instrumentation"
               width={600}
               height={400}
@@ -130,7 +130,7 @@ export default function Home() {
           {/* 4. Industrial Robots for Shopfloor */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
-              src="/images/industrial-robots.png"
+              src="/solutions/industrial-robots.png"
               alt="Industrial Robots for Shopfloor"
               width={600}
               height={400}
@@ -149,7 +149,7 @@ export default function Home() {
           {/* 5. Warehouse Automation */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
-              src="/images/warehouse-automation.png"
+              src="/solutions/warehouse-automation.png"
               alt="Warehouse Automation"
               width={600}
               height={400}
@@ -179,7 +179,8 @@ export default function Home() {
       <section className="py-20 px-4 bg-slate-100 text-center">
         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-          We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals. Describe your requirement and schedule a call with our expert.
+          We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals. 
+          Describe your requirement and schedule a call with our expert.
         </p>
         <ContactForm />
       </section>
