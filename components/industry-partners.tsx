@@ -9,6 +9,7 @@ const partnerLogos = [
   "/images/renu_logo.png",
   "/images/jayashree_encoders_logo.png",
   "/images/vap_logo.png"
+  "/images/hikvision_logo.png"
 ];
 
 export default function IndustryPartners() {
