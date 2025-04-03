@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <section className="py-20 px-4 bg-white text-left">
-      <div className="max-w-6xl mx-auto space-y-20">
+      <div className="max-w-6xl mx-auto pi-25">
         {/* Intro Section */}
         <div>
           <h1 className="text-4xl font-bold mb-6">About Aseiro Industries</h1>
