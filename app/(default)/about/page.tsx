@@ -1,5 +1,6 @@
 // app/about/page.tsx
 import Image from "next/image";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function AboutPage() {
   return (
@@ -38,7 +39,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-10">Meet the Team</h2>
 
           {/* Abhijeet */}
-          <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
             <Image
               src="/team/team-abhijeet.png"
               alt="Abhijeet Madnurkar"
@@ -49,18 +50,24 @@ export default function AboutPage() {
             <div>
               <h3 className="text-xl font-semibold">Abhijeet Madnurkar</h3>
               <p className="text-gray-600 text-sm mb-2">Co-Founder & Managing Director</p>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-sm mb-3">
                 With 17+ years in industrial automation, Abhijeet built Vinayak Automation Products (VAP) into a well-known 
                 brand across Hyderabad and South India. His strong relationships with OEMs, integrators, and factories have 
-                made him a trusted name in the industry. He has helped hundreds of clients adopt reliable automation solutions, 
-                from PLCs and HMIs to sensors and motion control. At Aseiro, he brings this powerful network and on-ground 
-                experience to deliver practical, modern automation and machine vision systems.
+                made him a trusted name in the industry...
               </p>
+              <div className="flex gap-4 text-blue-600 text-xl">
+                <a href="mailto:abhijeet@aseiro.in" aria-label="Email">
+                  <FaEnvelope className="hover:text-blue-800 transition" />
+                </a>
+                <a href="https://linkedin.com/in/abhijeet-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin className="hover:text-blue-800 transition" />
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Pradyumna */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-12">
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row-reverse items-center gap-6">
             <Image
               src="/team/team-pradyumna.png"
               alt="Pradyumna Madnurkar"
@@ -71,20 +78,22 @@ export default function AboutPage() {
             <div>
               <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>
               <p className="text-gray-600 text-sm mb-2">Co-Founder & Robotics Engineer</p>
-              <p className="text-gray-500 text-sm">
-                With a Master’s in Robotics from the University of Sheffield and hands-on experience 
-                at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
-                end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
-                automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
-                Visa, his vision is to scale Aseiro into a global provider of machine vision and 
-                automation solutions. At Aseiro, he leads the development of intelligent robotic and 
-                vision systems tailored to the evolving needs of modern manufacturing.
+              <p className="text-gray-500 text-sm mb-3">
+                With a Master’s in Robotics from the University of Sheffield and hands-on experience at Rivelin Robotics...
               </p>
+              <div className="flex gap-4 text-blue-600 text-xl">
+                <a href="mailto:pradyumna@aseiro.in" aria-label="Email">
+                  <FaEnvelope className="hover:text-blue-800 transition" />
+                </a>
+                <a href="https://linkedin.com/in/pradyumna-madnurkar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin className="hover:text-blue-800 transition" />
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Subbarao */}
-          <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
             <Image
               src="/team/team-subbarao.png"
               alt="Subbarao"
@@ -93,16 +102,19 @@ export default function AboutPage() {
               className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
             />
             <div>
-              <h3 className="text-xl font-semibold">Subbarao</h3>
+              <h3 className="text-xl font-semibold">Subbarao Thallikonda</h3>
               <p className="text-gray-600 text-sm mb-2">Business Development</p>
-              <p className="text-gray-500 text-sm">
-                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
-                brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
-                machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
-                development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
-                Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
-                Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
+              <p className="text-gray-500 text-sm mb-3">
+                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao brings deep experience...
               </p>
+              <div className="flex gap-4 text-blue-600 text-xl">
+                <a href="mailto:subbarao@aseiro.in" aria-label="Email">
+                  <FaEnvelope className="hover:text-blue-800 transition" />
+                </a>
+                <a href="https://linkedin.com/in/subbarao-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin className="hover:text-blue-800 transition" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
