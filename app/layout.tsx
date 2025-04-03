@@ -1,4 +1,3 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Aseiro Industries", url: "https://aseiro.in" }],
   creator: "Aseiro Industries",
   icons: {
-    icon: "/favicon.ico", // ✅ This line adds your favicon
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Aseiro Industries – Automation Meets Intelligence",
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Aseiro Industries",
     images: [
       {
-        url: "/images/og-aseiro-image.png",
+        url: "/images/og-aseiro-image.png", // Ensure this image is in your public/images folder
         width: 1200,
         height: 630,
         alt: "Aseiro Open Graph Banner",
