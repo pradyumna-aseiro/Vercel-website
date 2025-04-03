@@ -1,48 +1,18 @@
-import type { Metadata } from "next";
+import "./css/style.css";
+
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Aseiro Industries – Machine Vision & Automation",
-  description:
-    "Tailored robotics, machine vision, and automation solutions for factory productivity and quality control.",
-  keywords: [
-    "Aseiro Industries",
-    "machine vision",
-    "industrial automation",
-    "robotics India",
-    "factory quality inspection",
-    "AMRs",
-  ],
-  authors: [{ name: "Aseiro Industries", url: "https://aseiro.in" }],
-  creator: "Aseiro Industries",
+  description: "Tailored machine vision and robotics solutions for industrial quality control.",
   icons: {
     icon: "/favicon.ico",
-  },
-  openGraph: {
-    title: "Aseiro Industries – Automation Meets Intelligence",
-    description:
-      "Explore cutting-edge industrial automation and machine vision solutions for your production line.",
-    url: "https://aseiro.in",
-    siteName: "Aseiro Industries",
-    images: [
-      {
-        url: "/images/og-aseiro-image.png", // Ensure this image is in your public/images folder
-        width: 1200,
-        height: 630,
-        alt: "Aseiro Open Graph Banner",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Aseiro Industries – Machine Vision & Automation",
-    description:
-      "Industrial automation meets intelligence. Custom robotics & vision systems for quality assurance.",
-    images: ["/images/og-image-aseiro.png"],
   },
 };
 
@@ -52,8 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
+      >
+        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
