@@ -44,7 +44,7 @@ export default function AboutPage() {
               alt="Abhijeet Madnurkar"
               width={100}
               height={100}
-              className="rounded-full object-cover"
+              className="rounded-full object-cover w-[100px] h-[100px] shrink-0"
             />
             <div>
               <h3 className="text-xl font-semibold">Abhijeet Madnurkar</h3>
@@ -66,17 +66,19 @@ export default function AboutPage() {
               alt="Pradyumna Madnurkar"
               width={100}
               height={100}
-              className="rounded-full object-cover"
+              className="rounded-full object-cover w-[100px] h-[100px] shrink-0"
             />
             <div>
               <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>
               <p className="text-gray-600 text-sm mb-2">Co-Founder & Robotics Engineer</p>
               <p className="text-gray-500 text-sm">
-                With a Master’s in Robotics from the University of Sheffield and experience at Rivelin Robotics, 
-                Pradyumna has worked on microfactories, custom end-of-arm tooling, and PLC-integrated robotics. 
-                His work spans global automation deployments across aerospace and defense sectors. 
-                At Aseiro, he leads the development of intelligent robotics and machine vision systems tailored 
-                to modern manufacturing challenges.
+              With a Master’s in Robotics from the University of Sheffield and hands-on experience 
+              at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
+              end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
+              automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
+              Visa, his vision is to scale Aseiro into a global provider of machine vision and 
+              automation solutions. At Aseiro, he leads the development of intelligent robotic and 
+              vision systems tailored to the evolving needs of modern manufacturing.
               </p>
             </div>
           </div>
