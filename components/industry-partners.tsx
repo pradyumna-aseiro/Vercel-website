@@ -1,6 +1,9 @@
 "use client";
 
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const partners = [
   {
@@ -28,30 +31,46 @@ const partners = [
     logo: "/logos/hikvision_logo.png",
     url: "https://www.hikvisionindia.com/",
   },
-  // Add more partners here
+  // Add more partners if needed
 ];
 
 export default function IndustryPartners() {
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    mode: "free-snap",
+    slides: {
+      perView: 3,
+      spacing: 30,
+    },
+    breakpoints: {
+      "(max-width: 768px)": {
+        slides: { perView: 2, spacing: 16 },
+      },
+      "(max-width: 480px)": {
+        slides: { perView: 1.3, spacing: 10 },
+      },
+    },
+  });
+
   return (
-    <div className="flex flex-wrap justify-center items-center gap-8">
+    <div ref={sliderRef} className="keen-slider">
       {partners.map((partner, index) => (
         <a
           key={index}
           href={partner.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block hover:opacity-80 transition"
+          className="keen-slider__slide flex justify-center items-center"
         >
           <Image
             src={partner.logo}
             alt={partner.name}
             width={160}
             height={60}
-            className="object-contain"
+            className="object-contain hover:opacity-80 transition"
           />
         </a>
       ))}
     </div>
   );
 }
-
