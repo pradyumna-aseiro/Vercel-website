@@ -58,10 +58,10 @@ export default function AboutPage() {
                 experience to deliver practical, modern automation and machine vision systems.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:abhijeet@aseiro.in" aria-label="Email">
+                <a href="mailto:info@aseiro.in" aria-label="Email">
                   <FaEnvelope className="hover:text-blue-800 transition" />
                 </a>
-                <a href="https://linkedin.com/in/abhijeet-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/abhijeet-madnurkar-27a15142/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin className="hover:text-blue-800 transition" />
                 </a>
               </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 <a href="mailto:pradyumna@aseiro.in" aria-label="Email">
                   <FaEnvelope className="hover:text-blue-800 transition" />
                 </a>
-                <a href="https://linkedin.com/in/pradyumna-madnurkar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/pradyumnam/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin className="hover:text-blue-800 transition" />
                 </a>
               </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 <a href="mailto:subbarao@aseiro.in" aria-label="Email">
                   <FaEnvelope className="hover:text-blue-800 transition" />
                 </a>
-                <a href="https://linkedin.com/in/subbarao-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/subbarao-business-development-171119301/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin className="hover:text-blue-800 transition" />
                 </a>
               </div>
