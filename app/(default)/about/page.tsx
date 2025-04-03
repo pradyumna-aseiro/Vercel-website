@@ -53,7 +53,9 @@ export default function AboutPage() {
               <p className="text-gray-500 text-sm mb-3">
                 With 17+ years in industrial automation, Abhijeet built Vinayak Automation Products (VAP) into a well-known 
                 brand across Hyderabad and South India. His strong relationships with OEMs, integrators, and factories have 
-                made him a trusted name in the industry...
+                made him a trusted name in the industry. He has helped hundreds of clients adopt reliable automation solutions, 
+                from PLCs and HMIs to sensors and motion control. At Aseiro, he brings this powerful network and on-ground 
+                experience to deliver practical, modern automation and machine vision systems.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
                 <a href="mailto:abhijeet@aseiro.in" aria-label="Email">
@@ -79,7 +81,13 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>
               <p className="text-gray-600 text-sm mb-2">Co-Founder & Robotics Engineer</p>
               <p className="text-gray-500 text-sm mb-3">
-                With a Master’s in Robotics from the University of Sheffield and hands-on experience at Rivelin Robotics...
+                With a Master’s in Robotics from the University of Sheffield and hands-on experience 
+                at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
+                end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
+                automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
+                Visa, his vision is to scale Aseiro into a global provider of machine vision and 
+                automation solutions. At Aseiro, he leads the development of intelligent robotic and 
+                vision systems tailored to the evolving needs of modern manufacturing.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
                 <a href="mailto:pradyumna@aseiro.in" aria-label="Email">
@@ -105,7 +113,12 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold">Subbarao Thallikonda</h3>
               <p className="text-gray-600 text-sm mb-2">Business Development</p>
               <p className="text-gray-500 text-sm mb-3">
-                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao brings deep experience...
+                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
+                brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
+                machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
+                development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
+                Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
+                Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
                 <a href="mailto:subbarao@aseiro.in" aria-label="Email">
