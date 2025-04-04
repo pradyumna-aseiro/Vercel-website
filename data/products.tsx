@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export const productSections = [
+export const productSection = [
   {
     title: "Area Scan Cameras",
     items: [
