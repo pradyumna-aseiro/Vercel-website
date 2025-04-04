@@ -110,11 +110,6 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="font-medium text-gray-600 hover:text-gray-900" href="/industries">
-                    Industries
-                  </Link>
-                </li>
-                <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/solutions">
                     Solutions
                   </Link>

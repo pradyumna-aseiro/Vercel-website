@@ -8,7 +8,7 @@ import { BiChip, BiSolidFoodMenu } from "react-icons/bi";
 export default function AboutPage() {
   return (
     <section className="py-20 px-4 bg-white text-left">
-      <div className="max-w-6xl mx-auto space-y-20">
+      <div className="max-w-6xl mx-auto space-y-25">
 
         {/* About Aseiro */}
         <div className="pt-16">
@@ -41,22 +41,22 @@ export default function AboutPage() {
         <div>
           <h2 className="text-3xl font-bold mb-10">What Sets Us Apart</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <div className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition">
               <FaPuzzlePiece className="text-blue-600 text-3xl mb-3" />
               <h3 className="text-xl font-semibold mb-2">Custom-Tailored Systems</h3>
               <p className="text-gray-600">We create modular solutions that fit perfectly into your factory setup—whether it's a small upgrade or a full transformation.</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-md transition">
+            <div className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition">
               <FaTools className="text-blue-600 text-3xl mb-3" />
               <h3 className="text-xl font-semibold mb-2">End-to-End Support</h3>
               <p className="text-gray-600">From planning and integration to training and maintenance—we stay with you every step of the way.</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-md transition">
+            <div className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition">
               <FaRobot className="text-blue-600 text-3xl mb-3" />
               <h3 className="text-xl font-semibold mb-2">Innovative Integration</h3>
               <p className="text-gray-600">We blend machine vision, robotics, and real-time controls for faster inspection and lower costs—up to 70% inspection time reduction.</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-md transition">
+            <div className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition">
               <FaCheckCircle className="text-blue-600 text-3xl mb-3" />
               <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
               <p className="text-gray-600">Over 10,000 clients trust our systems to deliver reliable performance across industries.</p>
@@ -68,35 +68,35 @@ export default function AboutPage() {
         <div>
           <h2 className="text-3xl font-bold mb-10">Industries We Serve</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <MdFactory className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Automotive</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <GiChemicalDrop className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Pharma & Healthcare</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <BiChip className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Electronics</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <PiWarehouseLight className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Packaging & Logistics</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <BiSolidFoodMenu className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>FMCG</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <GiAutoRepair className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Food & Beverage</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <MdFactory className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>Textiles</p>
             </div>
-            <div className="bg-white shadow rounded-lg p-4">
+            <div className="bg-white shadow rounded-lg p-4 shadow-md hover:shadow-lg transition">
               <FaTools className="text-blue-600 text-4xl mb-2 mx-auto" />
               <p>R&D Labs</p>
             </div>
