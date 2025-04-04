@@ -1,3 +1,4 @@
+// app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/hero-home";
@@ -81,10 +82,11 @@ export default function Home() {
             />
             <div className="p-6">
               <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Custom Machine Vision Solutions
+                Printing, Inspection and Rejection using Machine vision System
               </h3>
               <p>
-                Tailored solutions for printing inspection, sorting, and rejection using high-speed cameras, sensors, and pneumatics.
+                Tailored solutions for printing inspection, sorting, and rejection of products on a conveyor in a production line 
+                using high-speed cameras, sensors, and pneumatics.
               </p>
             </div>
           </div>
@@ -103,12 +105,33 @@ export default function Home() {
                 Dimensional Measurement Systems
               </h3>
               <p>
-                Real-time measurement of product tolerances on manufacturing lines using cameras and laser technology.
+                Real-time measurement of product tolerances on manufacturing lines using cameras and optimum lighting.
               </p>
             </div>
           </div>
 
-          {/* 3. Industrial Automation */}
+          {/* 3. Defect Detection */}
+          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <Image
+              src="/solutions/defect-detection.png"
+              alt="Defect Detection using Machine Vision"
+              width={600}
+              height={400}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-blue-600 mb-2">
+                Defect Detection using Machine Vision
+              </h3>
+              <p>
+                Identify surface defects, cracks, scratches, rust, holes, and misalignments in real time. 
+                This system is ideal for detecting imperfections in bearings, metal surfaces, castings, 
+                packaging lines, and other components where visual quality assurance is critical.
+              </p>
+            </div>
+          </div>
+
+          {/* 4. Industrial Automation */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/solutions/plc-hmi-automation.png"
@@ -126,8 +149,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-        
-          {/* 4. Industrial Robots for Shopfloor */}
+
+          {/* 5. Industrial Robots for Shopfloor */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/solutions/industrial-robots.png"
@@ -146,7 +169,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 5. Warehouse Automation */}
+          {/* 6. Warehouse Automation */}
           <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
             <Image
               src="/solutions/warehouse-automation.png"

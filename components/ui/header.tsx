@@ -93,7 +93,7 @@ export default function Header() {
       <div className={`transition duration-300 ease-in-out ${!top ? "bg-white shadow-lg backdrop-blur-sm" : ""}`}>
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <div className="mt-5 w-40 md:w-48 lg:w-56">
+            <div className="mt-5 w-45 md:w-48 lg:w-56">
               <Logo />
             </div>
 
