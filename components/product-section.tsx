@@ -1,28 +1,21 @@
 import ProductCard from "./product-card";
 
-interface Product {
-  title: string;
-  description: string;
-  image: string;
-}
-
 interface ProductSectionProps {
   title: string;
-  products: Product[];
+  items: {
+    name: string;
+    description: string;
+    image: string;
+  }[];
 }
 
-export default function ProductSection({ title, products }: ProductSectionProps) {
+export default function ProductSection({ title, items }: ProductSectionProps) {
   return (
-    <section className="py-16 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">{title}</h2>
-      <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {products.map((product, index) => (
-          <ProductCard
-            key={index}
-            title={product.title}
-            description={product.description}
-            image={product.image}
-          />
+    <section className="mb-20">
+      <h2 className="text-3xl font-semibold mb-8">{title}</h2>
+      <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {items.map((item, idx) => (
+          <ProductCard key={idx} name={item.name} description={item.description} image={item.image} />
         ))}
       </div>
     </section>
