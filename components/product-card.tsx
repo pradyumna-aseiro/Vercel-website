@@ -1,21 +1,23 @@
 import Image from "next/image";
 
-interface ProductCardProps {
-  name: string;
-  description: string;
-  image: string;
-}
-
-export default function ProductCard({ name, description, image }: ProductCardProps) {
+const ProductCard = ({ name, description, image }: { name: string; description: string; image: string }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden text-left">
-      <div className="relative w-full h-48">
-        <Image src={image} alt={name} layout="fill" objectFit="contain" className="bg-gray-100" />
+    <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <div className="relative w-full h-64 overflow-hidden">
+        <Image
+          src={image}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
       </div>
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-blue-600 mb-2">{name}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-blue-600">{name}</h3>
+        <p className="text-gray-700 text-sm mt-2">{description}</p>
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;
