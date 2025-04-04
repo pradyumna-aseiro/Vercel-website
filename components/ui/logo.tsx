@@ -11,6 +11,7 @@ export default function Logo() {
         height={39}
         className="object-contain"
         priority
+        layout="intrinsic"
       />
     </Link>
   );
