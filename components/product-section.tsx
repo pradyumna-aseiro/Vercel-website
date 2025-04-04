@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const ProductSection = ({ title, items }: { title: string; items: any[] }) => {
+const ProductSections = ({ title, items }: { title: string; items: any[] }) => {
   return (
     <section className="py-20 px-4">
       <h2 className="text-3xl font-bold mb-6">{title}</h2>
@@ -51,4 +51,4 @@ const ProductSection = ({ title, items }: { title: string; items: any[] }) => {
   );
 };
 
-export default ProductSection;
+export default ProductSections;
