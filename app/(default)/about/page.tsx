@@ -34,116 +34,43 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Meet the Team */}
+        {/* Why ASEIRO & Our Approach */}
         <div>
-          <h2 className="text-3xl font-bold mb-10">Meet the Team</h2>
-
-          {/* Abhijeet */}
-          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
-            <Image
-              src="/team/team-abhijeet.png"
-              alt="Abhijeet Madnurkar"
-              width={120}
-              height={120}
-              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
-            />
-            <div>
-              <h3 className="text-xl font-semibold">Abhijeet Madnurkar</h3>
-              <p className="text-gray-600 text-sm mb-2">Co-Founder & Managing Director</p>
-              <p className="text-gray-500 text-sm mb-3">
-                With 17+ years in industrial automation, Abhijeet built Vinayak Automation Products (VAP) into a well-known 
-                brand across Hyderabad and South India. His strong relationships with OEMs, integrators, and factories have 
-                made him a trusted name in the industry. He has helped hundreds of clients adopt reliable automation solutions, 
-                from PLCs and HMIs to sensors and motion control. At Aseiro, he brings this powerful network and on-ground 
-                experience to deliver practical, modern automation and machine vision systems.
-              </p>
-              <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:info@aseiro.in" aria-label="Email">
-                  <FaEnvelope className="hover:text-blue-800 transition" />
-                </a>
-                <a href="https://www.linkedin.com/in/abhijeet-madnurkar-27a15142/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <FaLinkedin className="hover:text-blue-800 transition" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Pradyumna */}
-          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row-reverse items-center gap-6">
-            <Image
-              src="/team/team-pradyumna.png"
-              alt="Pradyumna Madnurkar"
-              width={120}
-              height={120}
-              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
-            />
-            <div>
-              <h3 className="text-xl font-semibold">Pradyumna Madnurkar</h3>
-              <p className="text-gray-600 text-sm mb-2">Co-Founder & Robotics Engineer</p>
-              <p className="text-gray-500 text-sm mb-3">
-                With a Master’s in Robotics from the University of Sheffield and hands-on experience 
-                at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom 
-                end-of-arm tooling, and PLC-integrated robotic systems. His work spans global 
-                automation deployments in aerospace and defense sectors. Backed by a UK Global Talent 
-                Visa, his vision is to scale Aseiro into a global provider of machine vision and 
-                automation solutions. At Aseiro, he leads the development of intelligent robotic and 
-                vision systems tailored to the evolving needs of modern manufacturing.
-              </p>
-              <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:pradyumna@aseiro.in" aria-label="Email">
-                  <FaEnvelope className="hover:text-blue-800 transition" />
-                </a>
-                <a href="https://www.linkedin.com/in/pradyumnam/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <FaLinkedin className="hover:text-blue-800 transition" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Subbarao */}
-          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
-            <Image
-              src="/team/team-subbarao.png"
-              alt="Subbarao"
-              width={120}
-              height={120}
-              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
-            />
-            <div>
-              <h3 className="text-xl font-semibold">Subbarao Thallikonda</h3>
-              <p className="text-gray-600 text-sm mb-2">Business Development</p>
-              <p className="text-gray-500 text-sm mb-3">
-                With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 
-                brings deep experience in product and systems design, embedded systems, SPM, plant automation, 
-                machine vision, and robotics. He has led multi-disciplinary teams across global offshore 
-                development centres in both IT and manufacturing industries. At Aseiro, he leads the Business 
-                Development function, actively driving new enquiries and orders. He holds a degree in Mechanical 
-                Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.
-              </p>
-              <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:subbarao@aseiro.in" aria-label="Email">
-                  <FaEnvelope className="hover:text-blue-800 transition" />
-                </a>
-                <a href="https://www.linkedin.com/in/subbarao-business-development-171119301/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <FaLinkedin className="hover:text-blue-800 transition" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Mission & Vision */}
-        <div>
-          <h2 className="text-3xl font-bold mb-4">Our Mission & Vision</h2>
+          <h2 className="text-3xl font-bold mb-4">Why ASEIRO & Our Approach</h2>
           <p className="text-gray-700 text-lg mb-4">
-            Our mission is to empower Indian manufacturing with advanced automation technologies 
-            that meet global standards.
-          </p>
-          <p className="text-gray-700 text-lg">
-            We envision a future where every production line is intelligent, efficient, and free 
-            from manual errors.
+            After 17 years in the market, we noticed that many solutions lacked customization, scalability, or affordability. 
+            ASEIRO was created to fix these problems with modular, advanced systems that not only cut costs but also boost 
+            productivity. For example, our solutions can reduce inspection time by 70% and cut labor costs by 40%. We serve 
+            industries like pharma, FMCG, automotive, electronics, and more, building on VAP’s trusted reputation.
           </p>
         </div>
+
+        {/* What Sets Us Apart */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">What Sets Us Apart</h2>
+          <ul className="text-gray-700 text-lg list-disc list-inside space-y-2">
+            <li><strong>Custom-Tailored Systems:</strong> Our solutions fit perfectly into your factory, whether you need a full system or a small upgrade.</li>
+            <li><strong>End-to-End Service:</strong> We support you from the very first plan through installation, training, and ongoing help.</li>
+            <li><strong>Innovative Integration:</strong> We bring together smart machine vision, robotics, and real-time controls to get the best results.</li>
+            <li><strong>Proven Track Record:</strong> Over 10,000 clients trust us to deliver reliable automation across many industries.</li>
+          </ul>
+        </div>
+
+        {/* Industries We Serve */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Industries We Serve</h2>
+          <ul className="text-gray-700 text-lg list-disc list-inside grid md:grid-cols-2 gap-x-10 gap-y-2">
+            <li>Automotive</li>
+            <li>Healthcare and Pharmaceutical</li>
+            <li>Electronics Manufacturing</li>
+            <li>Packaging and Logistics</li>
+            <li>FMCG</li>
+            <li>Food & Beverage</li>
+            <li>Textile</li>
+            <li>Research and Development</li>
+          </ul>
+        </div>
+
       </div>
     </section>
   );
