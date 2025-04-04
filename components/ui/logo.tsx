@@ -7,8 +7,8 @@ export default function Logo() {
       <Image
         src="/logos/aseiro_logo.svg" // or .png if you prefer
         alt="Aseiro Industries Logo"
-        width={99}         // Adjust this if needed
-        height={33}
+        width={105}         // Adjust this if needed
+        height={39}
         className="object-contain"
         priority
       />
