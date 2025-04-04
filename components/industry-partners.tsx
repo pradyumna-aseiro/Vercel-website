@@ -39,18 +39,18 @@ export default function IndustryPartners() {
     loop: true,
     mode: "free-snap",
     slides: {
-      perView: 3,
-      spacing: 30,
+      perView: 4,
+      spacing: 12, // was 30
     },
     breakpoints: {
       "(max-width: 768px)": {
-        slides: { perView: 2, spacing: 16 },
+        slides: { perView: 2.5, spacing: 10 },
       },
       "(max-width: 480px)": {
-        slides: { perView: 1.3, spacing: 10 },
+        slides: { perView: 1.5, spacing: 6 },
       },
     },
-  });
+  });  
 
   return (
     <div ref={sliderRef} className="keen-slider">
