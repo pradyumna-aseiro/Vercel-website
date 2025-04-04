@@ -1,23 +1,32 @@
-import ProductCard from "./product-card";
+import React from "react";
 
-interface ProductSectionProps {
-  title: string;
-  items: {
-    name: string;
-    description: string;
-    image: string;
-  }[];
-}
-
-export default function ProductSection({ title, items }: ProductSectionProps) {
+const ProductSection = ({ title, items }: { title: string; items: any[] }) => {
   return (
-    <section className="mb-20">
-      <h2 className="text-3xl font-semibold mb-8">{title}</h2>
-      <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {items.map((item, idx) => (
-          <ProductCard key={idx} name={item.name} description={item.description} image={item.image} />
+    <section className="py-20 px-4">
+      <h2 className="text-3xl font-bold mb-4">{title}</h2>
+      <div className="grid gap-8 md:grid-cols-2 text-left">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+          >
+            <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.name}</h3>
+              <p className="text-gray-700 text-sm mb-3">{item.description}</p>
+              <div>{item.details}</div> {/* Render the JSX from details */}
+            </div>
+          </div>
         ))}
       </div>
     </section>
   );
-}
+};
+
+export default ProductSection;
