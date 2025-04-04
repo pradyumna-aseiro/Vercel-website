@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 
 const ProductSection = ({ title, items }: { title: string; items: any[] }) => {

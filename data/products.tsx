@@ -1,10 +1,15 @@
+"use client"; // Make sure to use this in client-side files
+
+import React from "react";
+
 export const productSections = [
   {
     title: "Area Scan Cameras",
     items: [
       {
         name: "Area Scan Camera",
-        description: "An area scan camera captures a full 2D image in a single exposure.",
+        description:
+          "An area scan camera captures a full 2D image in a single exposure for industrial applications.",
         image: "/products/area-scan-camera.png",
         details: (
           <>
@@ -24,7 +29,8 @@ export const productSections = [
       },
       {
         name: "CS Area Scan Camera",
-        description: "The CS Series offers major improvements in design, R&D, and production processes.",
+        description:
+          "The CS Series offers major improvements in design, R&D, and production processes.",
         image: "/products/cs-camera.png",
         details: (
           <>
@@ -40,8 +46,7 @@ export const productSections = [
           </>
         ),
       },
-      // Add more products as needed
     ],
   },
-  // Add other product sections here
+  // Add more product sections as needed
 ];
