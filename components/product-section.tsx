@@ -1,4 +1,5 @@
 import React from "react";
+import Collapsible from "react-collapsible";
 
 const ProductSection = ({ title, items }: { title: string; items: any[] }) => {
   return (
@@ -20,7 +21,24 @@ const ProductSection = ({ title, items }: { title: string; items: any[] }) => {
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.name}</h3>
               <p className="text-gray-700 text-sm mb-3">{item.description}</p>
-              <div>{item.details}</div> {/* Render the JSX from details */}
+              
+              {/* Collapsible Section for details */}
+              <Collapsible trigger="View Details" transitionTime={200}>
+                <div className="text-left">
+                  <h3 className="text-xl font-semibold">Key Features:</h3>
+                  <ul className="list-disc pl-6">
+                    {item.details.features.map((feature: string, idx: number) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                  <h3 className="text-xl font-semibold mt-4">Applications:</h3>
+                  <ul className="list-disc pl-6">
+                    {item.details.applications.map((application: string, idx: number) => (
+                      <li key={idx}>{application}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Collapsible>
             </div>
           </div>
         ))}
