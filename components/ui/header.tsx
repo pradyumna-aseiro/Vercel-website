@@ -36,23 +36,28 @@ export default function Header() {
             </svg>
           </a>
 
-          {/* WhatsApp */}
+          {/* WhatsApp with inline SVG (fixed color and hover effect) */}
           <a
             href="https://wa.me/917893715471"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-green-500 transition"
+            className="flex items-center justify-center w-5 h-5 hover:scale-110 transition-transform"
             aria-label="WhatsApp"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-              className="w-5 h-5"
-            >
-              <path d="M380.9 97.1C339-10.7 211.7-35.6 123.8 41.1 68.5 86.2 42.1 150.6 54.4 212.7c-6.5 31.8-19.6 61.7-38.6 87.3-3.3 4.4-2.4 10.7 1.9 14.1L75.7 351c4.5 3.3 10.9 2.5 14.4-1.7 21.7-26.8 48.9-48.1 79.2-62.6 32.2-15.2 66.9-22.1 101.2-20.2 60.7 3.3 119.1-19.5 155.3-61.9 35.7-41.8 39.6-103.3 8.1-149.6zM222.2 348.8c-18.1 0-35.6-2.7-52.3-8.2-2.8-.9-6-.1-7.7 2.1l-18.4 23.1c-41.2-27.7-74.3-69.6-93-117.2-18.2-46.3-22.5-95.7-12.1-142.8C60.9 74.3 90.2 46.5 125.3 30.5c32.4-14.4 67.7-20 101.6-16.6 32.9 3.2 63.8 14.9 89.9 33.3 30.3 21.3 51.5 52.5 60.6 87.4 9.2 35.5 5.6 73.3-10.1 106.1-24.4 52.1-77.4 87.5-138.7 91.1z"/>
-            </svg>
-          </a>
+            dangerouslySetInnerHTML={{
+              __html: `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                  <defs>
+                    <linearGradient id="wa-gradient" x1="1337.28" y1="518.24" x2="1337.28" y2="-2164.82" gradientTransform="matrix(0.19, 0, 0, -0.19, 0.81, 98.89)" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#61fd7d"/>
+                      <stop offset="1" stop-color="#2bb826"/>
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#wa-gradient)" d="M512,382.07c0,2.8-.09,8.88-.26,13.58...Z"/>
+                  <path fill="#fff" d="M379.56,131.67A172.4,172.4,0,0,0,256.67,80.73C161,80.73...Z"/>
+                </svg>
+              `,
+            }}
+          />
         </div>
 
         <div className="flex items-center gap-4">
