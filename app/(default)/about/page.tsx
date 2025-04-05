@@ -179,7 +179,7 @@ export default function AboutPage() {
               className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
             />
             <div>
-              <h3 className="text-xl font-semibold">Subbarao Thallikonda</h3>
+              <h3 className="text-xl font-semibold">Subbarao Tadikonda</h3>
               <p className="text-gray-600 text-sm mb-2">Business Development</p>
               <p className="text-gray-500 text-sm mb-3">
                 With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao 

@@ -78,24 +78,34 @@ export const productSections = [
         image: "/products/id2000-reader.png",
       },
       {
-        name: "ID3000 Series Smart Code Reader",
+        name: "ID3000 Series Logistics Smart Code Reader",
         description: "Compact, modular design with deep-learning platform for a wide range of industrial code reading applications.",
         image: "/products/id3000-reader.png",
       },
       {
-        name: "ID5000 Series Smart Code Reader",
+        name: "ID5000 Series Logistics Smart Code Reader",
         description: "Full-featured code reader with multi-core processor for advanced decoding performance and high-resolution support.",
         image: "/products/id5000-reader.png",
       },
       {
-        name: "ID6000 Series Smart Code Reader",
-        description: "The ID6000 is an image-based, high-resolution barcode reader specialized for the logistics industry. It features advanced algorithms designed to handle diverse and complex logistics code reading scenarios.",
+        name: "ID6000 Series Logistics Smart Code Reader",
+        description: "The ID6000 is a high-resolution barcode reader designed for the logistics industry, equipped with advanced algorithms for complex code reading. ",
         image: "/products/id6000-reader.png",
       },
       {
-        name: "ID7000 Series Smart Code Reader",
-        description: "Built on an embedded platform, the ID7000 series is designed for bottom-surface scanning in logistics. Its 48 LED illuminators and integrated structure provide ultra-wide coverage, making it ideal for complex scanning requirements.",
+        name: "ID7000 Series Logistics Smart Code Reader",
+        description: "The ID7000 is built for bottom-surface scanning, featuring 48 LED illuminators for ultra-wide coverage in logistics applications.",
         image: "/products/id7000-reader.png",
+      },
+      {
+        name: "IDS Series Logistics Smart Code Reader",
+        description: "The Logistics code reader combines image capture, data processing, and output in one compact, reliable device, ideal for various code reading applications.",
+        image: "/products/ids-reader.png",
+      },
+      {
+        name: "IDH Series Logistics Smart Code Reader",
+        description: "The IDH series is a durable handheld barcode scanner with a high-resolution sensor, automatic fill lights, and support for both USB and network interfaces..",
+        image: "/products/idh-reader.png",
       },
     ],
   },
@@ -111,6 +121,21 @@ export const productSections = [
         name: "CL Line Scan Camera",
         description: "Features resolutions from 2K to 16K pixels, with multiple interface options for high-speed imaging and industrial inspection.",
         image: "/products/cl-camera.png",
+      },
+    ],
+  },
+  {
+    title: "3D Cameras",
+    items: [
+      {
+        name: "Line Laser 3D Camera",
+        description: "Equipped with high-precision measurement and advanced dynamic image processing algorithms, these 3D cameras accurately capture object dimensions in logistics and warehousing applications. They offer a wide dynamic detection range and robust performance under varying conditions.",
+        image: "/products/line-laser-camera.png",
+      },
+      {
+        name: "RGB-D 3D camera",
+        description: "Utilizing active binocular stereo imaging combined with color cameras, this 3D camera captures high-frame-rate RGB-D images. Its built-in algorithms and deep learning enable it to perform multiple vision tasks independently, making it an ideal core for standalone systems, robotic parcel-feeding, and palletizing or depalletizing applications. ",
+        image: "/products/rgbd-camera.png",
       },
     ],
   },
