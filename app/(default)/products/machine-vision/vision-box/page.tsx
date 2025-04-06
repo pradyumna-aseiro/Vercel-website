@@ -1,4 +1,5 @@
 import { visionBoxVariants } from "@/data/vision-box";
+import Image from "next/image";
 
 export default function VisionBoxPage() {
   return (
@@ -26,7 +27,19 @@ export default function VisionBoxPage() {
                   key={index}
                   className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
                 >
-                  <td className="py-4 px-4 font-semibold">{variant.model}</td>
+                  <td className="py-4 px-4">
+                    <div className="flex flex-col items-center">
+                      <div className="relative w-[100px] h-[85px] mb-2">
+                        <Image
+                          src={variant.image}
+                          alt={variant.model}
+                          layout="fill"
+                          objectFit="contain"
+                        />
+                      </div>
+                      <span className="font-semibold text-center">{variant.model}</span>
+                    </div>
+                  </td>
                   <td className="py-4 px-4">{variant.processor}</td>
                   <td className="py-4 px-4">{variant.interfaces}</td>
                   <td className="py-4 px-4">{variant.features}</td>
