@@ -1,3 +1,5 @@
+// components/camera-card.tsx
+
 import Image from "next/image";
 
 interface CameraCardProps {
@@ -16,34 +18,32 @@ export default function CameraCard({
   applications,
 }: CameraCardProps) {
   return (
-    <div className="w-[475px] bg-white rounded-xl shadow overflow-hidden">
-      {/* Image */}
-      <div className="w-[475px] h-[400px] overflow-hidden">
+    <div className="w-[475px] bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <div className="relative w-[475px] h-[400px]">
         <Image
           src={image}
           alt={name}
           width={475}
           height={400}
-          className="object-cover w-[475px] h-[400px] rounded-t-xl"
+          className="rounded-t-xl object-contain"
         />
       </div>
 
-      {/* Text content */}
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-blue-700 mb-2">{name}</h3>
-        <p className="text-gray-700 text-sm mb-2">{description}</p>
+      <div className="p-6 text-left">
+        <h3 className="text-xl font-bold text-blue-600 mb-2">{name}</h3>
+        <p className="text-gray-700 text-sm mb-4">{description}</p>
 
-        <h4 className="font-semibold text-sm">Key Features:</h4>
-        <ul className="list-disc pl-5 text-sm mb-2">
-          {features.map((feature, idx) => (
-            <li key={idx}>{feature}</li>
+        <h4 className="font-semibold text-gray-800 mb-1">Key Features:</h4>
+        <ul className="list-disc list-inside text-sm text-gray-600 mb-3">
+          {features.map((feature, index) => (
+            <li key={index}>{feature}</li>
           ))}
         </ul>
 
-        <h4 className="font-semibold text-sm">Applications:</h4>
-        <ul className="list-disc pl-5 text-sm">
-          {applications.map((app, idx) => (
-            <li key={idx}>{app}</li>
+        <h4 className="font-semibold text-gray-800 mb-1">Applications:</h4>
+        <ul className="list-disc list-inside text-sm text-gray-600">
+          {applications.map((app, index) => (
+            <li key={index}>{app}</li>
           ))}
         </ul>
       </div>
