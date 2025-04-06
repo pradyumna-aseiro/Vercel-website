@@ -1,23 +1,29 @@
+// components/product-card.tsx
 import Image from "next/image";
+import Link from "next/link";
 
-const ProductCard = ({ name, description, image }: { name: string; description: string; image: string }) => {
+type ProductCardProps = {
+  name: string;
+  description: string;
+  link: string;
+  image: string;
+};
+
+export default function ProductCard({ name, description, link, image }: ProductCardProps) {
   return (
-    <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-      <div className="relative w-full h-64 overflow-hidden">
-        <Image
-          src={image}
-          alt={name}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
+    <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+      <div className="relative w-full h-48 overflow-hidden rounded-t-xl">
+        <Image src={image} alt={name} layout="fill" objectFit="cover" />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-blue-600">{name}</h3>
-        <p className="text-gray-700 text-sm mt-2">{description}</p>
+        <h3 className="text-xl font-bold text-blue-600 mb-2">{name}</h3>
+        <p className="text-gray-700 text-sm mb-3">{description}</p>
+        <Link href={link}>
+          <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300">
+            Explore
+          </a>
+        </Link>
       </div>
     </div>
   );
-};
-
-export default ProductCard;
+}
