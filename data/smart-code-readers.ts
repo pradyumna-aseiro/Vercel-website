@@ -1,4 +1,4 @@
-// data/smart-code-reader.ts
+// data/smart-code-readers.ts
 
 export const smartCodeReaders = [
   {
