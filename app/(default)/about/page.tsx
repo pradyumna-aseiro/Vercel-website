@@ -199,6 +199,69 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+
+          {/* Sriranga */}
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row-reverse items-center gap-6">
+            <Image
+              src="/team/team-sriranga.png"
+              alt="Sriranga"
+              width={120}
+              height={120}
+              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
+            />
+            <div>
+              <h3 className="text-xl font-semibold">Sriranga Puppala</h3>
+              <p className="text-gray-600 text-sm mb-2">Automation Engineer</p>
+              <p className="text-gray-500 text-sm mb-3">
+              Sriranga is an Automation Engineer with a Bachelor's in Electrical and Electronics Engineering and 
+              experience in the Semiconductor Industry. He specializes in Industrial Automation and Embedded Systems, 
+              combining hardware and software to build smart automation solutions. At ASEIRO, he designs and implements 
+              custom systems using PLCs (Siemens, ABB, Delta, RENU), HMIs, embedded controllers, and industrial cameras. 
+              His work focuses on Vision Robotics for material handling and industrial automation. Driven by innovation, 
+              he aims to create efficient and intelligent automation systems.
+              </p>
+              <div className="flex gap-4 text-blue-600 text-xl">
+                <a href="mailto:design.parth@aseiro.in" aria-label="Email">
+                  <FaEnvelope className="hover:text-blue-800 transition" />
+                </a>
+                <a href="https://www.linkedin.com/in/sriranga-puppala-656428200" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin className="hover:text-blue-800 transition" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Parth */}
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
+            <Image
+              src="/team/team-parth.png"
+              alt="Parth"
+              width={120}
+              height={120}
+              className="rounded-full object-cover w-[120px] h-[120px] shrink-0"
+            />
+            <div>
+              <h3 className="text-xl font-semibold">Parth Madnurkar</h3>
+              <p className="text-gray-600 text-sm mb-2">Automation Engineer</p>
+              <p className="text-gray-500 text-sm mb-3">
+              With a strong foundation in Instrumentation and Control Engineering from Vishwakarma Institute of Technology 
+              and experience at Vinayak Automation Products, Parth has contributed to PLC programming, 3D modeling, machine 
+              vision, and advanced robotics. His work spans IoT-based healthcare devices, energy-harvesting solutions, and 
+              voice-controlled robotics, reflected in multiple publications and intellectual property filings. Driven by a 
+              passion for automation and innovative problem-solving, he aims to scale next-generation technologies across 
+              various industries. At Aseiro Industries, Parth leads efforts in machine vision, industrial automation, and 
+              robotics, shaping the future of modern manufacturing.
+              </p>
+              <div className="flex gap-4 text-blue-600 text-xl">
+                <a href="mailto:design.sriranga@aseiro.in" aria-label="Email">
+                  <FaEnvelope className="hover:text-blue-800 transition" />
+                </a>
+                <a href="https://www.linkedin.com/in/parth-madnurkar-3b1123279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin className="hover:text-blue-800 transition" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Mission & Vision */}
