@@ -1,40 +1,57 @@
-// app/products.tsx or where you list main products
+// app/products/page.tsx
 import Link from "next/link";
 
-const products = [
+const productCategories = [
   {
-    name: "Machine Vision Products",
-    description: "Explore advanced camera systems including area scan, line scan, and 3D cameras.",
-    image: "/products/aseiro-camera-product.png",
-    link: "/products/area-scan-cameras" // Link to Area Scan Cameras Page
+    title: "Machine Vision Products",
+    description: "High-performance cameras, code readers, 3D systems, and optics for industrial inspection and automation.",
+    linkPrefix: "/products/machine-vision",
+    subcategories: [
+      { name: "Area Scan Cameras", slug: "area-scan-cameras" },
+      { name: "Line Scan Cameras", slug: "line-scan-cameras" },
+      { name: "Smart Cameras", slug: "smart-cameras" },
+      { name: "3D Cameras", slug: "3d-cameras" },
+      { name: "Smart Code Readers", slug: "smart-code-readers" },
+      { name: "Lenses", slug: "lenses" },
+      { name: "Light Sources", slug: "light-sources" },
+      { name: "Vision Box", slug: "vision-box" },
+    ],
   },
   {
-    name: "Autonomous Mobile Robots (AMRs)",
-    description: "Explore AMRs designed for intelligent logistics.",
-    image: "/products/aseiro-amr-product.png",
-    link: "/products/amrs" // Link to AMRs Page (if you have it)
-  }
+    title: "Autonomous Mobile Robots (AMRs)",
+    description: "Flexible robots for intelligent intralogistics with navigation, docking, and fleet management.",
+    linkPrefix: "/products/amrs",
+    subcategories: [
+      { name: "Latent Mobile Robots", slug: "latent-mobile-robots" },
+      { name: "Forklift Mobile Robots", slug: "forklift-mobile-robots" },
+      { name: "Collaborative Mobile Robots", slug: "collaborative-mobile-robots" },
+    ],
+  },
 ];
 
 export default function ProductsPage() {
   return (
-    <section className="py-20 px-4 bg-white">
-      <h2 className="text-3xl font-bold mb-12">Our Products</h2>
-      <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
-        {products.map((product, index) => (
-          <Link key={index} href={product.link}>
-            <div className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-              <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-600 mb-2">{product.name}</h3>
-                <p className="text-gray-700 text-sm mb-3">{product.description}</p>
-              </div>
+    <main className="pt-32 pb-20 px-4 bg-slate-50 text-center">
+      <h1 className="text-4xl font-bold mb-12">Explore Our Products</h1>
+      <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 text-left">
+        {productCategories.map((category, index) => (
+          <div key={index} className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-2xl font-semibold mb-2">{category.title}</h2>
+            <p className="text-gray-600 mb-4">{category.description}</p>
+            <div className="grid gap-2">
+              {category.subcategories.map((sub, i) => (
+                <Link
+                  key={i}
+                  href={`${category.linkPrefix}/${sub.slug}`}
+                  className="block px-4 py-2 rounded bg-slate-100 hover:bg-blue-50 text-blue-700 font-medium transition"
+                >
+                  {sub.name}
+                </Link>
+              ))}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
-    </section>
+    </main>
   );
 }
