@@ -1,18 +1,20 @@
 // data/area-scan-cameras.ts
+
 export const areaScanCameras = [
   {
     name: "CB Board Level Camera",
     description:
-      "Compact board-level cameras in single or stacked formats, supporting GigE or U3V protocols.",
-    keyFeatures: [
-      "Compact single-board or multi-board stacked design",
+      "Compact camera ideal for embedded, 3D, and medical applications.",
+    image: "/products/area-scan/CB.png",
+    features: [
+      "Compact single-board or multi-board formats",
       "Supports GigE or U3V protocols",
     ],
     applications: [
-      "Industrial and embedded systems",
+      "Embedded vision systems",
       "3D imaging",
-      "Medical applications",
+      "Medical imaging and compact installations",
     ],
   },
-  // Add other camera models here
+  // Add more cameras...
 ];
