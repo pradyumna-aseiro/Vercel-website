@@ -24,7 +24,7 @@ export default function CameraCard({
           src={image}
           alt={name}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           className="rounded-t-xl"
         />
       </div>
