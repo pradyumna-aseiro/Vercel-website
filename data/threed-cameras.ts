@@ -1,6 +1,6 @@
-// data/3d-cameras.ts
+// data/threed-cameras.ts
 
-export const 3dCameras = [
+export const threedCameras = [
   {
     name: "Line Laser 3D Camera",
     description:
