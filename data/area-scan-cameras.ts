@@ -1,17 +1,18 @@
+// data/area-scan-cameras.ts
 export const areaScanCameras = [
   {
-    name: "CS Area Scan Camera",
-    description: "Enhanced design for general machine vision with improved performance.",
-    image: "/products/cs-camera.png",
+    name: "CB Board Level Camera",
+    description:
+      "Compact board-level cameras in single or stacked formats, supporting GigE or U3V protocols.",
+    keyFeatures: [
+      "Compact single-board or multi-board stacked design",
+      "Supports GigE or U3V protocols",
+    ],
+    applications: [
+      "Industrial and embedded systems",
+      "3D imaging",
+      "Medical applications",
+    ],
   },
-  {
-    name: "CU Area Scan Camera",
-    description: "Low power consumption and stable performance for versatile use.",
-    image: "/products/cu-camera.png",
-  },
-  {
-    name: "CH Area Scan Camera",
-    description: "High-end camera for electronics, semiconductors, and panel manufacturing.",
-    image: "/products/ch-camera.png",
-  },
+  // Add other camera models here
 ];
