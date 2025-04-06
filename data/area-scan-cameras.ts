@@ -3,43 +3,43 @@
 export const areaScanCameras = [
     {
       name: "CS Area Scan Camera",
-      description: "Designed for precision applications in industries like electronics and panel manufacturing.",
-      image: "/images/cs-area-scan.jpg",
+      description: "The CS series camera is designed for high-performance applications...",
       features: [
-        "Enhanced user experience",
-        "Improved design and performance",
-        "Precision imaging for industrial settings",
+        "Enhanced design and performance",
+        "Multiple interfaces supported",
+        "Low latency"
       ],
-      application: [
-        "Panel Manufacturing",
-        "Electronics",
-        "Semiconductor Industries",
-      ],
+      applications: [
+        "General machine vision",
+        "Measurement applications"
+      ]
     },
     {
-      name: "CU Area Scan Camera",
-      description: "Built on a low power platform for stable performance in various industrial settings.",
-      image: "/images/cu-area-scan.jpg",
+      name: "CI Area Scan Camera",
+      description: "The CI series camera offers precision imaging with high resolution...",
       features: [
-        "Low power platform",
-        "Stable performance in industrial environments",
+        "GigE and USB 3.0 interfaces",
+        "High resolution for detailed images",
+        "Low power consumption"
       ],
-      application: ["Basic vision applications", "General industrial use"],
+      applications: [
+        "Panel manufacturing",
+        "Semiconductor inspection"
+      ]
     },
     {
       name: "CH Area Scan Camera",
-      description: "A high-end, precision-focused camera designed for industries requiring the highest imaging quality.",
-      image: "/images/ch-area-scan.jpg",
+      description: "The CH series is built for precision in industries like semiconductors and electronics.",
       features: [
-        "High-end precision",
-        "Supports various data interfaces: GigE, USB 3.0, Camera Link, etc.",
+        "Multiple data interface options",
+        "Precision-focused design",
+        "Supports Camera Link and CoaXPress"
       ],
-      application: [
-        "Panel manufacturing",
-        "Electronics and semiconductor industries",
-        "New energy sectors",
-      ],
+      applications: [
+        "Electronics inspection",
+        "Semiconductor development"
+      ]
     },
-    // Add more cameras as needed
+    // Add more cameras as needed...
   ];
   
