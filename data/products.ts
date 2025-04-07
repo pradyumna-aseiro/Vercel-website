@@ -3,38 +3,38 @@ export const productCategories = [
   {
     title: "Machine Vision Products",
     description:
-      "High-performance cameras, code readers, 3D systems, and optics for industrial inspection and automation.",
+      "Our machine vision products deliver comprehensive, high-performance imaging solutions for industrial applications. We offer a range of cameras—including area scan, line scan, and smart cameras—that capture high-resolution images for precise inspection, measurement, and real-time analysis. Our smart code readers and 3D cameras enhance automated data collection, depth sensing, and quality control, while our lens systems and accessories ensure optimal imaging in even the most challenging environments.",
     linkPrefix: "/products/machine-vision",
     subcategories: [
       {
         name: "Area Scan Cameras",
         slug: "area-scan-cameras",
         description:
-          "Captures high-resolution 2D images for general inspection and measurement tasks.",
+          "An area scan camera captures a full 2D image in a single exposure using a grid of pixel sensors. This allows it to acquire detailed snapshots of still or slow-moving subjects without requiring complex motion control. By reading the entire imaging area at once, area scan cameras are easy to integrate and excel in general machine vision, measurement, or inspection tasks.",
       },
       {
         name: "Line Scan Cameras",
         slug: "line-scan-cameras",
         description:
-          "Captures images one line at a time for fast-moving or continuous materials.",
+          "A line scan camera captures images one row of pixels at a time, creating a continuous, high-resolution image as the subject or material moves past. This design is ideal for inspecting fast-moving objects or wide, continuous materials (like webs or fabrics) and ensures precise, detailed imaging in industrial applications.",
       },
       {
         name: "Smart Cameras",
         slug: "smart-cameras",
         description:
-          "Integrated cameras with built-in processing for compact and efficient vision applications.",
+          "A smart camera combines an imaging sensor and a built-in processor to capture, process, and analyze images in real-time without external computing. This compact design simplifies machine vision tasks, making it easier to deploy for automated inspection, quality control, and other industrial applications.",
       },
       {
         name: "3D Cameras",
         slug: "three-d-cameras",
         description:
-          "Provides depth and spatial information for robotic vision and high-precision inspection.",
+          "A 3D camera captures both color and depth information to create detailed three-dimensional images. This advanced technology enables precise measurements and real-time analysis, making it ideal for robotics, quality control, and 3D mapping applications.",
       },
       {
         name: "Smart Code Readers",
         slug: "smart-code-readers",
         description:
-          "Efficient barcode and QR code reading using intelligent vision technology.",
+          "A Smart Code Reader combines a high-resolution imaging sensor with built-in decoding algorithms to rapidly and accurately read barcodes and 2D codes. Its compact, all-in-one design simplifies integration, making it ideal for traceability, logistics, and automated data collection across diverse industrial environments.",
       },
       {
         name: "Lenses",
@@ -52,7 +52,7 @@ export const productCategories = [
         name: "Vision Box",
         slug: "vision-box",
         description:
-          "Controller boxes with powerful processors and interfaces for vision system deployment.",
+          "Our Vision Box is a powerful controller solution designed for machine vision applications. It processes images, handles data, and manages connected devices to support a wide range of visual inspection tasks.",
       },
     ],
   },
