@@ -114,11 +114,11 @@ export default function Header() {
                     Solutions
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/resources">
                     Resources
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/about">
                     About
