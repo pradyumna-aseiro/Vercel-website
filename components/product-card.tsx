@@ -1,8 +1,8 @@
-// components/camera-card.tsx
+// components/product-card.tsx
 
 import Image from "next/image";
 
-interface CameraCardProps {
+interface ProductCardProps {
   name: string;
   description: string;
   image: string;
@@ -10,13 +10,13 @@ interface CameraCardProps {
   applications: string[];
 }
 
-export default function CameraCard({
+export default function ProductCard({
   name,
   description,
   image,
   features,
   applications,
-}: CameraCardProps) {
+}: ProductCardProps) {
   return (
     <div className="w-[475px] bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
       <div className="relative w-[475px] h-[400px]">

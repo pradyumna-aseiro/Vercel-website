@@ -66,25 +66,25 @@ export const productCategories = [
         name: "Latent Mobile Robots",
         slug: "lmr",
         description:
-          "Undercarriage AMRs for discreet payload transport in smart factories.",
+          "Designed for discreet and efficient payload transport within factories, warehouses, or distribution centers. They are capable of maneuvering in tight spaces, optimizing workflows by reducing manual labor, and increasing productivity in environments requiring flexibility and agility.",
       },
       {
         name: "Forklift Mobile Robots",
         slug: "fmr",
         description:
-          "Automated forklifts for autonomous pallet lifting, stacking, and transfer.",
+          "Fully autonomous, self-driving forklifts designed to enhance material handling tasks. These robots are capable of lifting, stacking, and transferring pallets, providing a robust solution for high-density storage systems. ",
       },
       {
         name: "Conveyor Mobile Robots",
         slug: "cmr",
         description:
-          "Designed to safely work alongside humans in shared workspaces.",
+          "Designed to safely work alongside human operators in shared workspaces. They automate the material flow by carrying goods along predetermined paths, using advanced vision and navigation systems.",
       },
       {
         name: "Conveyor Towing Unit",
         slug: "ctu",
         description:
-          "Designed handling goods at various heights, facilitating efficient storage and retrieval.",
+          "Flexible material handling solution designed to transport goods at various heights. It integrates seamlessly with existing conveyor systems, enhancing the workflow of automated warehouses, assembly lines, and distribution centers. ",
       },
     ],
   },

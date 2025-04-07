@@ -1,5 +1,5 @@
 // app/products/machine-vision/smart-code-readers/page.tsx
-import CameraCard from "@/components/camera-card";
+import ProductCard from "@/components/product-card";
 import { smartCodeReaders } from "@/data/smart-code-readers";
 
 export default function SmartCodeReadersPage() {
@@ -7,14 +7,14 @@ export default function SmartCodeReadersPage() {
     <main className="pt-32 pb-20 px-4 bg-slate-50 text-center">
       <h1 className="text-4xl font-bold mb-12">Smart Code Readers</h1>
       <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
-        {smartCodeReaders.map((camera, index) => (
-          <CameraCard
+        {smartCodeReaders.map((product, index) => (
+          <ProductCard
             key={index}
-            name={camera.name}
-            description={camera.description}
-            image={camera.image}
-            features={camera.features}
-            applications={camera.applications}
+            name={product.name}
+            description={product.description}
+            image={product.image}
+            features={product.features}
+            applications={product.applications}
           />
         ))}
       </div>

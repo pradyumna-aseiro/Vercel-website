@@ -1,20 +1,20 @@
-// app/products/machine-vision/smart-cameras/page.tsx
-import CameraCard from "@/components/camera-card";
-import { smartCameras } from "@/data/smart-cameras";
+// app/products/machine-vision/smart-products/page.tsx
+import ProductCard from "@/components/product-card";
+import { smartProducts } from "@/data/smart-products";
 
-export default function SmartCamerasPage() {
+export default function SmartProductsPage() {
   return (
     <main className="pt-32 pb-20 px-4 bg-slate-50 text-center">
-      <h1 className="text-4xl font-bold mb-12">Smart Cameras</h1>
+      <h1 className="text-4xl font-bold mb-12">Smart Products</h1>
       <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
-        {smartCameras.map((camera, index) => (
-          <CameraCard
+        {smartProducts.map((product, index) => (
+          <ProductCard
             key={index}
-            name={camera.name}
-            description={camera.description}
-            image={camera.image}
-            features={camera.features}
-            applications={camera.applications}
+            name={product.name}
+            description={product.description}
+            image={product.image}
+            features={product.features}
+            applications={product.applications}
           />
         ))}
       </div>

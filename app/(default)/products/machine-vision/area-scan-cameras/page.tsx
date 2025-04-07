@@ -1,20 +1,20 @@
-// app/products/machine-vision/area-scan-cameras/page.tsx
-import CameraCard from "@/components/camera-card";
-import { areaScanCameras } from "@/data/area-scan-cameras";
+// app/products/machine-vision/area-scan-products/page.tsx
+import ProductCard from "@/components/product-card";
+import { areaScanProducts } from "@/data/area-scan-products";
 
-export default function AreaScanCamerasPage() {
+export default function AreaScanProductsPage() {
   return (
     <main className="pt-32 pb-20 px-4 bg-slate-50 text-center">
-      <h1 className="text-4xl font-bold mb-12">Area Scan Cameras</h1>
+      <h1 className="text-4xl font-bold mb-12">Area Scan Products</h1>
       <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
-        {areaScanCameras.map((camera, index) => (
-          <CameraCard
+        {areaScanProducts.map((product, index) => (
+          <ProductCard
             key={index}
-            name={camera.name}
-            description={camera.description}
-            image={camera.image}
-            features={camera.features}
-            applications={camera.applications}
+            name={product.name}
+            description={product.description}
+            image={product.image}
+            features={product.features}
+            applications={product.applications}
           />
         ))}
       </div>
