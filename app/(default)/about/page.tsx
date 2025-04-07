@@ -221,7 +221,7 @@ export default function AboutPage() {
               he aims to create efficient and intelligent automation systems.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:design.parth@aseiro.in" aria-label="Email">
+                <a href="mailto:design.sriranga@aseiro.in" aria-label="Email">
                   <FaEnvelope className="hover:text-blue-800 transition" />
                 </a>
                 <a href="https://www.linkedin.com/in/sriranga-puppala-656428200" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -253,7 +253,7 @@ export default function AboutPage() {
               robotics, shaping the future of modern manufacturing.
               </p>
               <div className="flex gap-4 text-blue-600 text-xl">
-                <a href="mailto:design.sriranga@aseiro.in" aria-label="Email">
+                <a href="mailto:design.parth@aseiro.in" aria-label="Email">
                   <FaEnvelope className="hover:text-blue-800 transition" />
                 </a>
                 <a href="https://www.linkedin.com/in/parth-madnurkar-3b1123279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

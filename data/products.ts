@@ -3,7 +3,7 @@ export const productCategories = [
   {
     title: "Machine Vision Products",
     description:
-      "Our machine vision products deliver comprehensive, high-performance imaging solutions for industrial applications. We offer a range of cameras—including area scan, line scan, and smart cameras—that capture high-resolution images for precise inspection, measurement, and real-time analysis. Our smart code readers and 3D cameras enhance automated data collection, depth sensing, and quality control, while our lens systems and accessories ensure optimal imaging in even the most challenging environments.",
+      "High-performance cameras, code readers, 3D systems, and optics for industrial inspection and automation.",
     linkPrefix: "/products/machine-vision",
     subcategories: [
       {
@@ -60,23 +60,29 @@ export const productCategories = [
     title: "Autonomous Mobile Robots (AMRs)",
     description:
       "Flexible robots for intelligent intralogistics with navigation, docking, and fleet management.",
-    linkPrefix: "/products/amrs",
+    linkPrefix: "/products/amr",
     subcategories: [
       {
         name: "Latent Mobile Robots",
-        slug: "latent-mobile-robots",
+        slug: "lmr",
         description:
           "Undercarriage AMRs for discreet payload transport in smart factories.",
       },
       {
         name: "Forklift Mobile Robots",
-        slug: "forklift-mobile-robots",
+        slug: "fmr",
         description:
           "Automated forklifts for autonomous pallet lifting, stacking, and transfer.",
       },
       {
-        name: "Collaborative Mobile Robots",
-        slug: "collaborative-mobile-robots",
+        name: "Conveyor Mobile Robots",
+        slug: "cmr",
+        description:
+          "Designed to safely work alongside humans in shared workspaces.",
+      },
+      {
+        name: "Conveyor Towing Unit",
+        slug: "ctu",
         description:
           "Designed to safely work alongside humans in shared workspaces.",
       },
