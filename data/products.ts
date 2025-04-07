@@ -84,7 +84,7 @@ export const productCategories = [
         name: "Conveyor Towing Unit",
         slug: "ctu",
         description:
-          "Designed to safely work alongside humans in shared workspaces.",
+          "Designed handling goods at various heights, facilitating efficient storage and retrieval.",
       },
     ],
   },
