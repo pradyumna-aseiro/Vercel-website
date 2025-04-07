@@ -1,51 +1,85 @@
 // data/products.ts
-
-export const productSections = [
+export const productCategories = [
   {
     title: "Machine Vision Products",
-    items: [
+    description:
+      "High-performance cameras, code readers, 3D systems, and optics for industrial inspection and automation.",
+    linkPrefix: "/products/machine-vision",
+    subcategories: [
       {
         name: "Area Scan Cameras",
-        description: "High-resolution imaging for detailed inspections.",
-        link: "/products/area-scan-cameras",
-        image: "/images/area-scan-camera.jpg",
-      },
-      {
-        name: "Smart Cameras",
-        description: "Compact cameras with built-in processing.",
-        link: "/products/smart-cameras",
-        image: "/images/smart-camera.jpg",
+        slug: "area-scan-cameras",
+        description:
+          "Captures high-resolution 2D images for general inspection and measurement tasks.",
       },
       {
         name: "Line Scan Cameras",
-        description: "Ideal for fast-moving objects and continuous materials.",
-        link: "/products/line-scan-cameras",
-        image: "/images/line-scan-camera.jpg",
+        slug: "line-scan-cameras",
+        description:
+          "Captures images one line at a time for fast-moving or continuous materials.",
+      },
+      {
+        name: "Smart Cameras",
+        slug: "smart-cameras",
+        description:
+          "Integrated cameras with built-in processing for compact and efficient vision applications.",
       },
       {
         name: "3D Cameras",
-        description: "Capture depth and color for 3D inspection.",
-        link: "/products/3d-cameras",
-        image: "/images/3d-camera.jpg",
+        slug: "three-d-cameras",
+        description:
+          "Provides depth and spatial information for robotic vision and high-precision inspection.",
+      },
+      {
+        name: "Smart Code Readers",
+        slug: "smart-code-readers",
+        description:
+          "Efficient barcode and QR code reading using intelligent vision technology.",
+      },
+      {
+        name: "Lenses",
+        slug: "lens",
+        description:
+          "High-quality optics designed for industrial cameras to ensure clear and accurate imaging.",
+      },
+      {
+        name: "Light Sources",
+        slug: "lights",
+        description:
+          "Provides optimal illumination for machine vision systems using domes, rings, and panels.",
+      },
+      {
+        name: "Vision Box",
+        slug: "vision-box",
+        description:
+          "Controller boxes with powerful processors and interfaces for vision system deployment.",
       },
     ],
   },
   {
     title: "Autonomous Mobile Robots (AMRs)",
-    items: [
+    description:
+      "Flexible robots for intelligent intralogistics with navigation, docking, and fleet management.",
+    linkPrefix: "/products/amrs",
+    subcategories: [
       {
-        name: "AMR Type 1",
-        description: "A mobile robot designed for industrial logistics.",
-        link: "/products/amr-type-1",
-        image: "/images/amr-type-1.jpg",
+        name: "Latent Mobile Robots",
+        slug: "latent-mobile-robots",
+        description:
+          "Undercarriage AMRs for discreet payload transport in smart factories.",
       },
       {
-        name: "AMR Type 2",
-        description: "Advanced robot with autonomous navigation and mapping.",
-        link: "/products/amr-type-2",
-        image: "/images/amr-type-2.jpg",
+        name: "Forklift Mobile Robots",
+        slug: "forklift-mobile-robots",
+        description:
+          "Automated forklifts for autonomous pallet lifting, stacking, and transfer.",
+      },
+      {
+        name: "Collaborative Mobile Robots",
+        slug: "collaborative-mobile-robots",
+        description:
+          "Designed to safely work alongside humans in shared workspaces.",
       },
     ],
   },
-  // More product sections here...
 ];
