@@ -12,7 +12,11 @@ export const lights = [
       "Square Lights: Deliver focused, directional light, suitable for detailed imaging and high-contrast applications.",
       "Other Variants: We also offer LED panels and custom-designed lights to match specific inspection needs."
     ],
-    applications: [],
+    applications: [
+      "Dome Lights: Quality Control & Surface Inspection, Reflective or Glossy Object Inspection, Medical and Biological Imaging, and Industrial Sorting and Grading.",
+      "Ring Lights: Close-Up and Microscopic Inspection, 3D Inspection and Measurement, and Electronics and PCB Inspection",
+      "Square Lights: High-Contrast Imaging, Structured Light and Pattern Projection, Barcode and OCR Systems, and Defect Detection in Textured Surfaces",
+    ],
   },
   {
     name: "Light controller",
