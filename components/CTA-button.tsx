@@ -13,7 +13,7 @@ export default function CTAButton({ href, children, className = "" }: Props) {
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Link href={href}>
         <a
-          className={`inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300 ${className}`}
+            className={`inline-block px-6 py-3 rounded-md text-lg font-medium transition duration-300 ${className}`}
         >
           {children}
         </a>

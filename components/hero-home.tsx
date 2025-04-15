@@ -21,7 +21,7 @@ export default function HeroHome() {
               Contact Us →
             </CTAButton>
             <CTAButton
-              href="#solutions"
+              href="/solutions"
               className="bg-white text-gray-800 hover:bg-gray-100"
             >
               Learn More
