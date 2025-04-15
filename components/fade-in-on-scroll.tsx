@@ -1,9 +1,14 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, ReactNode } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export default function FadeInOnScroll({ children, delay = 0 }) {
+interface Props {
+  children: ReactNode;
+  delay?: number;
+}
+
+export default function FadeInOnScroll({ children, delay = 0 }: Props) {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
