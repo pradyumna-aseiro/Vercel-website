@@ -99,24 +99,23 @@ export default function Home() {
 
           <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 text-left">
             {products.map((product, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                  />
+              <FadeInOnScroll key={index} delay={index * 0.1}>
+                <div className="bg-white rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-blue-600 mb-2">{product.name}</h3>
+                    <p className="text-gray-700 text-sm mb-3">{product.description}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">{product.name}</h3>
-                  <p className="text-gray-700 text-sm mb-3">{product.description}</p>
-                </div>
-              </div>
+              </FadeInOnScroll>
             ))}
           </div>
 
@@ -139,19 +138,21 @@ export default function Home() {
 
           <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 text-left text-gray-700">
             {solutions.map((solution, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                <Image
-                  src={solution.image}
-                  alt={solution.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover rounded-md"
-                />
-                <div className="pt-4">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
-                  <p>{solution.desc}</p>
+              <FadeInOnScroll key={i} delay={i * 0.1}>
+                <div className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <Image
+                    src={solution.image}
+                    alt={solution.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover rounded-md"
+                  />
+                  <div className="pt-4">
+                    <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
+                    <p>{solution.desc}</p>
+                  </div>
                 </div>
-              </div>
+              </FadeInOnScroll>
             ))}
           </div>
 
@@ -174,13 +175,15 @@ export default function Home() {
 
           <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-left">
             {whyAseiro.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center">
-                <div className="flex justify-center mb-4">
-                  <Image src={item.icon} alt={item.title} width={48} height={48} />
+              <FadeInOnScroll key={index} delay={index * 0.1}>
+                <div className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center">
+                  <div className="flex justify-center mb-4">
+                    <Image src={item.icon} alt={item.title} width={48} height={48} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
+                  <p className="text-gray-700 text-sm">{item.desc}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
-                <p className="text-gray-700 text-sm">{item.desc}</p>
-              </div>
+              </FadeInOnScroll>
             ))}
           </div>
         </section>
