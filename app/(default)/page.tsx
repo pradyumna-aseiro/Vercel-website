@@ -56,9 +56,9 @@ export default function Home() {
 
         <div className="mt-10">
           <Link href="/products">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-md hover:bg-blue-700">
+            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105 shadow hover:shadow-lg">
               Explore Products
-            </button>
+            </a>
           </Link>
         </div>
       </section>
@@ -121,10 +121,61 @@ export default function Home() {
 
         <div className="mt-10">
           <Link href="/solutions">
-            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300">
+            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105 shadow hover:shadow-lg">
               Read more
             </a>
           </Link>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 px-4 bg-slate-100 text-center">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Why Choose Aseiro?</h2>
+        <p className="text-gray-600 leading-relaxed tracking-wide mb-12 max-w-3xl mx-auto">
+          Aseiro Industries brings together the latest technology and deep domain knowledge to deliver end-to-end automation and vision solutions that work.
+        </p>
+
+        <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-left">
+          {[
+            {
+              icon: "/icons/experience.svg",
+              title: "Industry Expertise",
+              desc: "Backed by years of experience in manufacturing, packaging, and process industries."
+            },
+            {
+              icon: "/icons/customization.svg",
+              title: "Custom Solutions",
+              desc: "Tailored automation systems designed specifically for your factory's needs."
+            },
+            {
+              icon: "/icons/integration.svg",
+              title: "Seamless Integration",
+              desc: "We ensure our systems talk to your PLCs, SCADA, and factory network with ease."
+            },
+            {
+              icon: "/icons/support.svg",
+              title: "On-Site Support",
+              desc: "We provide commissioning, training, and lifetime support post deployment."
+            },
+            {
+              icon: "/icons/innovation.svg",
+              title: "Technology Driven",
+              desc: "We integrate AI, machine vision, robotics, and IoT for future-ready automation."
+            },
+            {
+              icon: "/icons/speed.svg",
+              title: "Quick Deployment",
+              desc: "Modular plug-and-play solutions that reduce setup time and increase ROI."
+            },
+          ].map((item, index) => (
+            <div key={index} className="bg-white rounded-xl p-6 shadow hover:shadow-md transition text-center">
+              <div className="flex justify-center mb-4">
+                <Image src={item.icon} alt={item.title} width={48} height={48} />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
+              <p className="text-gray-700 text-sm">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
