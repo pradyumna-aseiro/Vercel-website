@@ -7,7 +7,6 @@ import ContactForm from "@/components/contact-form";
 import FadeInOnScroll from "@/components/fade-in-on-scroll";
 import CTAButton from "@/components/CTA-button";
 
-
 const products = [
   {
     name: "Machine Vision Products",
@@ -107,9 +106,12 @@ export default function Home() {
                     <Image
                       src={product.image}
                       alt={product.name}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-cover rounded-t-xl"
+                      placeholder="blur"
+                      blurDataURL="/images/blur-placeholder.png"
+                      priority={index === 0}
                     />
                   </div>
                   <div className="p-6">
@@ -144,6 +146,8 @@ export default function Home() {
                     width={600}
                     height={400}
                     className="w-full h-48 object-cover rounded-md"
+                    placeholder="blur"
+                    blurDataURL="/images/blur-placeholder.png"
                   />
                   <div className="pt-4">
                     <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
@@ -172,7 +176,14 @@ export default function Home() {
               <FadeInOnScroll key={index} delay={index * 0.1}>
                 <div className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center">
                   <div className="flex justify-center mb-4">
-                    <Image src={item.icon} alt={item.title} width={48} height={48} />
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={48}
+                      height={48}
+                      placeholder="blur"
+                      blurDataURL="/images/blur-placeholder.png"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
                   <p className="text-gray-700 text-sm">{item.desc}</p>
