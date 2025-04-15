@@ -2,41 +2,27 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import { ButtonHTMLAttributes } from "react";
 
-interface BaseProps {
+interface CTAButtonProps {
   text: string;
-  variant?: "primary" | "secondary";
+  href?: string;
   isExternal?: boolean;
-}
-
-type LinkProps = {
-  href: string;
-  type?: never;
-  disabled?: never;
-} & BaseProps;
-
-type ButtonProps = {
-  href?: undefined;
-  type?: "button" | "submit" | "reset";
+  variant?: "primary" | "secondary";
+  type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
   disabled?: boolean;
   onClick?: () => void;
-} & BaseProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement>;
+}
 
-type CTAButtonProps = LinkProps | ButtonProps;
-
-export default function CTAButton(props: CTAButtonProps) {
-  const {
-    text,
-    variant = "primary",
-    isExternal = false,
-    href,
-    type = "button",
-    disabled = false,
-    ...rest
-  } = props;
-
+export default function CTAButton({
+  text,
+  href,
+  isExternal = false,
+  variant = "primary",
+  type = "button",
+  disabled = false,
+  onClick,
+}: CTAButtonProps) {
   const baseStyles =
     "inline-block px-6 py-3 rounded-md text-base font-medium transition-all duration-300 hover:scale-105";
 
@@ -45,18 +31,24 @@ export default function CTAButton(props: CTAButtonProps) {
 
   const classes = `${baseStyles} ${variant === "primary" ? primary : secondary}`;
 
-  if (href) {
-    return isExternal ? (
+  // External link
+  if (href && isExternal) {
+    return (
       <motion.a
         href={href}
-        className={classes}
-        whileTap={{ scale: 0.98 }}
         target="_blank"
         rel="noopener noreferrer"
+        className={classes}
+        whileTap={{ scale: 0.98 }}
       >
         {text}
       </motion.a>
-    ) : (
+    );
+  }
+
+  // Internal link
+  if (href) {
+    return (
       <motion.div whileTap={{ scale: 0.98 }}>
         <Link href={href} className={classes}>
           {text}
@@ -65,14 +57,14 @@ export default function CTAButton(props: CTAButtonProps) {
     );
   }
 
-  // Otherwise render button
+  // Button (form usage)
   return (
     <motion.button
       type={type}
       disabled={disabled}
+      onClick={onClick}
       className={classes}
       whileTap={{ scale: 0.98 }}
-      {...rest}
     >
       {text}
     </motion.button>
