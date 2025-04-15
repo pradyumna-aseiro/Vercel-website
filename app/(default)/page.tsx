@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <CTAButton href="/products">Explore Products</CTAButton>
+            <CTAButton href="/products" text="Explore Products" />
           </div>
         </section>
       </FadeInOnScroll>
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <CTAButton href="/solutions">Read more</CTAButton>
+            <CTAButton href="/solutions" text="Read More" />
           </div>
         </section>
       </FadeInOnScroll>

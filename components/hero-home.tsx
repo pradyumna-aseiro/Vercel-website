@@ -17,17 +17,9 @@ export default function HeroHome() {
             Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced factories, eliminating human error and ensuring consistent product quality through smart automation.
           </p>
           <div className="flex flex-col sm:flex-row justify-start gap-4">
-            <CTAButton href="mailto:subbarao@aseiro.in">
-              Contact Us →
-            </CTAButton>
-            <CTAButton
-              href="/solutions"
-              className="bg-white text-gray-800 hover:bg-gray-100"
-            >
-              Learn More
-            </CTAButton>
+            <CTAButton href="mailto:subbarao@aseiro.in" text="Contact Us →" />
+            <CTAButton href="/solutions" text="Learn More" variant="secondary" />
           </div>
-        </div>
 
         {/* Banner Section */}
         <div className="mb-12 md:mb-20">
