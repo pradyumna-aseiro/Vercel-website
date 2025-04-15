@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import CTAButton from "@/components/CTAButton";
+import CTAButton from "@/components/CTA-button";
 
 export default function HeroHome() {
   return (
