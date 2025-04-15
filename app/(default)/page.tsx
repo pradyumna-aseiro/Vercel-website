@@ -103,15 +103,15 @@ export default function Home() {
               desc: "Mobile robots and smart inventory systems for faster order fulfillment, logistics automation, and reduced manual effort.",
             },
           ].map((solution, i) => (
-            <div key={i} className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+            <div key={i} className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <Image
                 src={solution.image}
                 alt={solution.title}
                 width={600}
                 height={400}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover rounded-md"
               />
-              <div className="p-6">
+              <div className="pt-4">
                 <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
                 <p>{solution.desc}</p>
               </div>
@@ -138,37 +138,37 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-left">
           {[
             {
-              icon: "/icons/experience.svg",
+              icon: "/icons/experience.png",
               title: "Industry Expertise",
-              desc: "Backed by years of experience in manufacturing, packaging, and process industries."
+              desc: "Backed by years of experience in manufacturing, packaging, and process industries.",
             },
             {
-              icon: "/icons/customization.svg",
+              icon: "/icons/customization.png",
               title: "Custom Solutions",
-              desc: "Tailored automation systems designed specifically for your factory's needs."
+              desc: "Tailored automation systems designed specifically for your factory's needs.",
             },
             {
-              icon: "/icons/integration.svg",
+              icon: "/icons/integration.png",
               title: "Seamless Integration",
-              desc: "We ensure our systems talk to your PLCs, SCADA, and factory network with ease."
+              desc: "We ensure our systems talk to your PLCs, SCADA, and factory network with ease.",
             },
             {
-              icon: "/icons/support.svg",
+              icon: "/icons/support.png",
               title: "On-Site Support",
-              desc: "We provide commissioning, training, and lifetime support post deployment."
+              desc: "We provide commissioning, training, and lifetime support post deployment.",
             },
             {
-              icon: "/icons/innovation.svg",
+              icon: "/icons/innovation.png",
               title: "Technology Driven",
-              desc: "We integrate AI, machine vision, robotics, and IoT for future-ready automation."
+              desc: "We integrate AI, machine vision, robotics, and IoT for future-ready automation.",
             },
             {
-              icon: "/icons/speed.svg",
+              icon: "/icons/speed.png",
               title: "Quick Deployment",
-              desc: "Modular plug-and-play solutions that reduce setup time and increase ROI."
+              desc: "Modular plug-and-play solutions that reduce setup time and increase ROI.",
             },
           ].map((item, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow hover:shadow-md transition text-center">
+            <div key={index} className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center">
               <div className="flex justify-center mb-4">
                 <Image src={item.icon} alt={item.title} width={48} height={48} />
               </div>
@@ -181,7 +181,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="py-20 px-4 bg-slate-100 text-center">
-        <h2 className="text-4xl font-bold tracking-tight mb-6">Get in Touch</h2>
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Schedule a Demo</h2>
         <p className="text-gray-600 leading-relaxed tracking-wide mb-8 max-w-2xl mx-auto">
           We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals. 
           Describe your requirement and schedule a call with our expert.
