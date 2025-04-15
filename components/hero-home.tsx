@@ -20,6 +20,7 @@ export default function HeroHome() {
             <CTAButton href="mailto:subbarao@aseiro.in" text="Contact Us →" />
             <CTAButton href="/solutions" text="Learn More" variant="secondary" />
           </div>
+        </div>
 
         {/* Banner Section */}
         <div className="mb-12 md:mb-20">
