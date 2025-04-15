@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CTAButton from "@/components/CTA-button";
 
 export default function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -11,7 +12,6 @@ export default function ContactForm() {
 
     const form = e.currentTarget;
 
-    // Collect data
     const data = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
@@ -21,17 +21,19 @@ export default function ContactForm() {
       call_time: (form.elements.namedItem("call_time") as HTMLInputElement).value,
     };
 
-    // Convert to URL encoded format
     const formData = new URLSearchParams(data).toString();
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbz8-S3po1m2kWM1pQn6ZI6XmewyQVRCy-TFlYFmPgkhb_ZdPyS19EwoehEO5t-wxg3_/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: formData,
-      });
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbz8-S3po1m2kWM1pQn6ZI6XmewyQVRCy-TFlYFmPgkhb_ZdPyS19EwoehEO5t-wxg3_/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: formData,
+        }
+      );
 
       const result = await response.json();
       if (result.result === "success") {
@@ -78,15 +80,12 @@ export default function ContactForm() {
         <input type="text" name="call_time" className="w-full border border-gray-300 rounded px-4 py-2" />
       </div>
       <div className="text-center">
-        <button
+        <CTAButton
           type="submit"
+          text={submitting ? "Submitting..." : "Submit"}
           disabled={submitting}
-          className="bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition"
-        >
-          {submitting ? "Submitting..." : "Submit"}
-        </button>
+        />
       </div>
     </form>
   );
 }
-
