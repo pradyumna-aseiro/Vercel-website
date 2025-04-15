@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import CTAButton from "@/components/CTA-button";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -37,13 +38,13 @@ export default function ContactForm() {
 
       const result = await response.json();
       if (result.result === "success") {
-        alert("Thank you! Your message has been submitted.");
+        toast.success("Thank you! Your message has been submitted.");
         form.reset();
       } else {
-        alert("Something went wrong. Please try again.");
+        toast.error("Something went wrong. Please try again.");
       }
     } catch (error) {
-      alert("Submission failed. Please try again later.");
+      toast.error("Submission failed. Please try again later.");
       console.error("Form error:", error);
     } finally {
       setSubmitting(false);
