@@ -4,7 +4,7 @@ import Link from "next/link";
 import Hero from "@/components/hero-home";
 import IndustryPartners from "@/components/industry-partners";
 import ContactForm from "@/components/contact-form";
-import FadeInOnScroll from "@/components/FadeInOnScroll";
+import FadeInOnScroll from "@/components/fade-in-on-scroll";
 
 const products = [
   {
