@@ -5,6 +5,8 @@ import Hero from "@/components/hero-home";
 import IndustryPartners from "@/components/industry-partners";
 import ContactForm from "@/components/contact-form";
 import FadeInOnScroll from "@/components/fade-in-on-scroll";
+import CTAButton from "@/components/CTA-button";
+
 
 const products = [
   {
@@ -120,11 +122,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <Link href="/products">
-              <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105 shadow hover:shadow-lg">
-                Explore Products
-              </a>
-            </Link>
+            <CTAButton href="/products">Explore Products</CTAButton>
           </div>
         </section>
       </FadeInOnScroll>
@@ -157,11 +155,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <Link href="/solutions">
-              <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105 shadow hover:shadow-lg">
-                Read more
-              </a>
-            </Link>
+            <CTAButton href="/solutions">Read more</CTAButton>
           </div>
         </section>
       </FadeInOnScroll>
