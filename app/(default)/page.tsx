@@ -25,17 +25,17 @@ export default function Home() {
       <Hero />
 
       {/* Products Section */}
-      <section className="py-20 px-4 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Our Products</h2>
-        <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
-          Explore advanced automation and vision systems built for your industrial needs.
+      <section className="py-20 px-6 bg-white text-center">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Our Products</h2>
+        <p className="text-gray-600 leading-relaxed tracking-wide mb-12 max-w-2xl mx-auto">
+          Explore high-performance automation and vision systems built to boost your efficiency and accuracy across industries.
         </p>
 
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
+        <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 text-left">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+              className="bg-white rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative w-full h-64 overflow-hidden rounded-t-xl">
                 <Image
@@ -56,137 +56,67 @@ export default function Home() {
 
         <div className="mt-10">
           <Link href="/products">
-            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300">
-              View All Products
-            </a>
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-md hover:bg-blue-700">
+              Explore Products
+            </button>
           </Link>
         </div>
       </section>
 
       {/* Solutions Section */}
       <section className="py-20 px-4 bg-slate-50 text-center">
-        <h2 className="text-3xl font-bold mb-4">Solutions</h2>
-        <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Solutions</h2>
+        <p className="text-gray-600 leading-relaxed tracking-wide mb-12 max-w-3xl mx-auto">
           We provide tailored industrial automation and machine vision solutions to solve real factory challenges across diverse industries.
         </p>
 
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3 text-left text-gray-700">
-          {/* 1. Printing Inspection */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/printing-inspection-rejection.png"
-              alt="Printing Inspection System"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Printing, Inspection and Rejection using Machine vision System
-              </h3>
-              <p>
-                Tailored solutions for printing inspection, sorting, and rejection of products on a conveyor in a production line 
-                using high-speed cameras, sensors, and pneumatics.
-              </p>
+        <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 text-left text-gray-700">
+          {[
+            {
+              title: "Printing, Inspection and Rejection using Machine vision System",
+              image: "/solutions/printing-inspection-rejection.png",
+              desc: "Tailored solutions for printing inspection, sorting, and rejection of products on a conveyor in a production line using high-speed cameras, sensors, and pneumatics.",
+            },
+            {
+              title: "Dimensional Measurement Systems",
+              image: "/solutions/dimensional-measurement.png",
+              desc: "Real-time measurement of product tolerances on manufacturing lines using cameras and optimum lighting.",
+            },
+            {
+              title: "Defect Detection using Machine Vision",
+              image: "/solutions/defect-detection.png",
+              desc: "Identify surface defects, cracks, scratches, rust, holes, and misalignments in real time. Ideal for bearings, metal surfaces, castings, and packaging lines.",
+            },
+            {
+              title: "Industrial Automation & Instrumentation",
+              image: "/solutions/plc-hmi-automation.png",
+              desc: "Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process control, monitoring, and data-driven decisions.",
+            },
+            {
+              title: "Industrial Robots for Shopfloor",
+              image: "/solutions/industrial-robots.png",
+              desc: "Custom robotic systems that streamline tasks such as pick & place, assembly, and material handling—enhancing accuracy and safety.",
+            },
+            {
+              title: "Warehouse Automation",
+              image: "/solutions/warehouse-automation.png",
+              desc: "Mobile robots and smart inventory systems for faster order fulfillment, logistics automation, and reduced manual effort.",
+            },
+          ].map((solution, i) => (
+            <div key={i} className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+              <Image
+                src={solution.image}
+                alt={solution.title}
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
+                <p>{solution.desc}</p>
+              </div>
             </div>
-          </div>
-
-          {/* 2. Dimensional Measurement */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/dimensional-measurement.png"
-              alt="Dimensional Measurement Systems"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Dimensional Measurement Systems
-              </h3>
-              <p>
-                Real-time measurement of product tolerances on manufacturing lines using cameras and optimum lighting.
-              </p>
-            </div>
-          </div>
-
-          {/* 3. Defect Detection */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/defect-detection.png"
-              alt="Defect Detection using Machine Vision"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Defect Detection using Machine Vision
-              </h3>
-              <p>
-                Identify surface defects, cracks, scratches, rust, holes, and misalignments in real time. 
-                This system is ideal for detecting imperfections in bearings, metal surfaces, castings, 
-                packaging lines, and other components where visual quality assurance is critical.
-              </p>
-            </div>
-          </div>
-
-          {/* 4. Industrial Automation */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/plc-hmi-automation.png"
-              alt="Industrial Automation & Instrumentation"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Industrial Automation & Instrumentation
-              </h3>
-              <p>
-                Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process control, monitoring, and data-driven decisions.
-              </p>
-            </div>
-          </div>
-
-          {/* 5. Industrial Robots for Shopfloor */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/industrial-robots.png"
-              alt="Industrial Robots for Shopfloor"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Industrial Robots for Shopfloor
-              </h3>
-              <p>
-                Custom robotic systems that streamline repetitive tasks such as pick & place, assembly, and material handling—enhancing accuracy and safety.
-              </p>
-            </div>
-          </div>
-
-          {/* 6. Warehouse Automation */}
-          <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
-            <Image
-              src="/solutions/warehouse-automation.png"
-              alt="Warehouse Automation"
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
-                Warehouse Automation
-              </h3>
-              <p>
-                Mobile robots and smart inventory systems for faster order fulfillment, logistics automation, and reduced manual effort.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-10">
@@ -200,8 +130,8 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="py-20 px-4 bg-slate-100 text-center">
-        <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Get in Touch</h2>
+        <p className="text-gray-600 leading-relaxed tracking-wide mb-8 max-w-2xl mx-auto">
           We help factories identify bottlenecks and implement scalable automation and vision solutions tailored to production goals. 
           Describe your requirement and schedule a call with our expert.
         </p>
@@ -210,14 +140,14 @@ export default function Home() {
 
       {/* Industry Partners */}
       <section className="py-20 px-4 bg-slate-50 text-center">
-        <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Our Partners</h2>
         <IndustryPartners />
       </section>
 
       {/* Blog */}
       <section className="py-20 px-4 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Latest Insights</h2>
-        <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Latest Insights</h2>
+        <p className="text-gray-600 leading-relaxed tracking-wide mb-8 max-w-3xl mx-auto">
           News, tutorials, and thought leadership from the world of automation and vision.
         </p>
       </section>
