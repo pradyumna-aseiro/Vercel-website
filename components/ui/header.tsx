@@ -92,7 +92,7 @@ export default function Header() {
       {/* Main Navbar */}
       <div className={`transition duration-300 ease-in-out ${!top ? "shadow-md backdrop-blur-md" : ""}`}>
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="flex items-center justify-between py-3 md:py-4">
+          <div className="flex items-center justify-between py-1 md:py-1">
             <div className="mt-5 w-45 md:w-48 lg:w-56">
               <Logo />
             </div>

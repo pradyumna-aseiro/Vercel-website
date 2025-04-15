@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
+import CTAButton from "@/components/CTAButton";
 
 export default function HeroHome() {
   return (
@@ -16,18 +17,15 @@ export default function HeroHome() {
             Aseiro Industries delivers custom robotics and machine vision solutions for fast-paced factories, eliminating human error and ensuring consistent product quality through smart automation.
           </p>
           <div className="flex flex-col sm:flex-row justify-start gap-4">
-            <a
-              className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
-              href="mailto:subbarao@aseiro.in"
-            >
+            <CTAButton href="mailto:subbarao@aseiro.in">
               Contact Us →
-            </a>
-            <a
-              className="btn bg-white text-gray-800 hover:bg-gray-100 shadow"
+            </CTAButton>
+            <CTAButton
               href="#solutions"
+              className="bg-white text-gray-800 hover:bg-gray-100"
             >
               Learn More
-            </a>
+            </CTAButton>
           </div>
         </div>
 
