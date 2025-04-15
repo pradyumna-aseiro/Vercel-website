@@ -1,7 +1,7 @@
 "use client";
+import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 
 export default function FadeInOnScroll({ children, delay = 0 }) {
   const controls = useAnimation();
@@ -21,7 +21,7 @@ export default function FadeInOnScroll({ children, delay = 0 }) {
       transition={{ duration: 0.6, delay }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 50 },
+        hidden: { opacity: 0, y: 40 },
       }}
     >
       {children}
