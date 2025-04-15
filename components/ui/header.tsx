@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-30">
+    <header className="sticky top-0 z-50 bg-white transition-shadow duration-300">
       {/* Top Bar with Socials, Slogan, Contact */}
       <div className="bg-slate-900 text-white text-sm py-2 px-4 flex justify-between items-center">
         {/* Left Section: Slogan + Social Icons */}
@@ -87,10 +87,10 @@ export default function Header() {
             Product Catalogue
           </a>
         </div>
-      </div>    
+      </div>
 
       {/* Main Navbar */}
-      <div className={`transition duration-300 ease-in-out ${!top ? "bg-white shadow-lg backdrop-blur-sm" : ""}`}>
+      <div className={`transition duration-300 ease-in-out ${!top ? "shadow-md backdrop-blur-md" : ""}`}>
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="mt-5 w-45 md:w-48 lg:w-56">
@@ -114,11 +114,6 @@ export default function Header() {
                     Solutions
                   </Link>
                 </li>
-                {/* <li>
-                  <Link className="font-medium text-gray-600 hover:text-gray-900" href="/resources">
-                    Resources
-                  </Link>
-                </li> */}
                 <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/about">
                     About
