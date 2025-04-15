@@ -91,6 +91,7 @@ export default function Home() {
     <>
       <Hero />
 
+      {/* Products */}
       <FadeInOnScroll>
         <section className="py-20 px-6 bg-white text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Our Products</h2>
@@ -106,12 +107,9 @@ export default function Home() {
                     <Image
                       src={product.image}
                       alt={product.name}
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover rounded-t-xl"
-                      placeholder="blur"
-                      blurDataURL="/images/blur-placeholder.png"
-                      priority={index === 0}
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
                     />
                   </div>
                   <div className="p-6">
@@ -129,6 +127,7 @@ export default function Home() {
         </section>
       </FadeInOnScroll>
 
+      {/* Solutions */}
       <FadeInOnScroll>
         <section className="py-20 px-4 bg-slate-50 text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Solutions</h2>
@@ -146,8 +145,6 @@ export default function Home() {
                     width={600}
                     height={400}
                     className="w-full h-48 object-cover rounded-md"
-                    placeholder="blur"
-                    blurDataURL="/images/blur-placeholder.png"
                   />
                   <div className="pt-4">
                     <h3 className="text-xl font-bold text-blue-600 mb-2">{solution.title}</h3>
@@ -164,6 +161,7 @@ export default function Home() {
         </section>
       </FadeInOnScroll>
 
+      {/* Why Choose Us */}
       <FadeInOnScroll>
         <section className="py-20 px-4 bg-slate-100 text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Why Choose Aseiro?</h2>
@@ -176,14 +174,7 @@ export default function Home() {
               <FadeInOnScroll key={index} delay={index * 0.1}>
                 <div className="bg-white rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center">
                   <div className="flex justify-center mb-4">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={48}
-                      height={48}
-                      placeholder="blur"
-                      blurDataURL="/images/blur-placeholder.png"
-                    />
+                    <Image src={item.icon} alt={item.title} width={48} height={48} />
                   </div>
                   <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
                   <p className="text-gray-700 text-sm">{item.desc}</p>
@@ -194,6 +185,7 @@ export default function Home() {
         </section>
       </FadeInOnScroll>
 
+      {/* Contact Section */}
       <FadeInOnScroll>
         <section className="py-20 px-4 bg-slate-100 text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Schedule a Demo</h2>
@@ -205,6 +197,7 @@ export default function Home() {
         </section>
       </FadeInOnScroll>
 
+      {/* Industry Partners */}
       <FadeInOnScroll>
         <section className="py-20 px-4 bg-slate-50 text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Our Partners</h2>
@@ -212,6 +205,7 @@ export default function Home() {
         </section>
       </FadeInOnScroll>
 
+      {/* Blog / Insights */}
       <FadeInOnScroll>
         <section className="py-20 px-4 bg-white text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Latest Insights</h2>
