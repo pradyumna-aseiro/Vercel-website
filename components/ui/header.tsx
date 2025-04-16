@@ -120,6 +120,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
+                  <Link className="font-medium text-gray-600 hover:text-gray-900" href="/partner">
+                    Partner
+                  </Link>
+                </li>
+                <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/contact">
                     Contact
                   </Link>

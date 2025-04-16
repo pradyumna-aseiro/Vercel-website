@@ -17,7 +17,7 @@ export default function AboutPage() {
       image: "/team/team-abhijeet.png",
       email: "info@aseiro.in",
       linkedin: "https://www.linkedin.com/in/abhijeet-madnurkar-27a15142/",
-      desc: `With 17+ years in industrial automation, Abhijeet built Vinayak Automation Products (VAP) into a well-known brand across Hyderabad and South India...`,
+      desc: `With 17+ years in industrial automation, Abhijeet built Vinayak Automation Products (VAP) into a well-known brand across Hyderabad and South India. His strong relationships with OEMs, integrators, and factories have made him a trusted name in the industry. He has helped hundreds of clients adopt reliable automation solutions, from PLCs and HMIs to sensors and motion control. At Aseiro, he brings this powerful network and on-ground experience to deliver practical, modern automation and machine vision systems.`,
       reverse: false,
     },
     {
@@ -26,7 +26,7 @@ export default function AboutPage() {
       image: "/team/team-pradyumna.png",
       email: "pradyumna@aseiro.in",
       linkedin: "https://www.linkedin.com/in/pradyumnam/",
-      desc: `With a Master’s in Robotics from the University of Sheffield and hands-on experience at Rivelin Robotics...`,
+      desc: `With a Master’s in Robotics from the University of Sheffield and hands-on experience at Rivelin Robotics, Pradyumna has contributed to building microfactories, custom end-of-arm tooling, and PLC-integrated robotic systems. His work spans global automation deployments in aerospace and defense sectors. Backed by a UK Global Talent Visa, his vision is to scale Aseiro into a global provider of machine vision and automation solutions. At Aseiro, he leads the development of intelligent robotic and vision systems tailored to the evolving needs of modern manufacturing.`,
       reverse: true,
     },
     {
@@ -35,7 +35,7 @@ export default function AboutPage() {
       image: "/team/team-subbarao.png",
       email: "subbarao@aseiro.in",
       linkedin: "https://www.linkedin.com/in/subbarao-business-development-171119301/",
-      desc: `With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies...`,
+      desc: `With 16+ years of leadership roles at Piramal, TATA, and Mojay Group Companies, Subbarao brings deep experience in product and systems design, embedded systems, SPM, plant automation, machine vision, and robotics. He has led multi-disciplinary teams across global offshore development centres in both IT and manufacturing industries. At Aseiro, he leads the Business Development function, actively driving new enquiries and orders. He holds a degree in Mechanical Engineering from Pune University and a Master’s in Operations Management from BITS Pilani.`,
       reverse: false,
     },
     {
@@ -44,7 +44,7 @@ export default function AboutPage() {
       image: "/team/team-sriranga.png",
       email: "design.sriranga@aseiro.in",
       linkedin: "https://www.linkedin.com/in/sriranga-puppala-656428200",
-      desc: `Sriranga is an Automation Engineer with a Bachelor's in Electrical and Electronics Engineering and experience in the Semiconductor Industry...`,
+      desc: `Sriranga is an Automation Engineer with a Bachelor's in Electrical and Electronics Engineering and experience in the Semiconductor Industry. He specializes in Industrial Automation and Embedded Systems, combining hardware and software to build smart automation solutions. At ASEIRO, he designs and implements custom systems using PLCs (Siemens, ABB, Delta, RENU), HMIs, embedded controllers, and industrial cameras. His work focuses on Vision Robotics for material handling and industrial automation. Driven by innovation, he aims to create efficient and intelligent automation systems.`,
       reverse: true,
     },
     {
@@ -53,7 +53,7 @@ export default function AboutPage() {
       image: "/team/team-parth.png",
       email: "design.parth@aseiro.in",
       linkedin: "https://www.linkedin.com/in/parth-madnurkar-3b1123279/",
-      desc: `With a strong foundation in Instrumentation and Control Engineering and experience at Vinayak Automation Products...`,
+      desc: `With a strong foundation in Instrumentation and Control Engineering from Vishwakarma Institute of Technology and experience at Vinayak Automation Products, Parth has contributed to PLC programming, 3D modeling, machine vision, and advanced robotics. His work spans IoT-based healthcare devices, energy-harvesting solutions, and voice-controlled robotics, reflected in multiple publications and intellectual property filings. Driven by a passion for automation and innovative problem-solving, he aims to scale next-generation technologies across various industries. At Aseiro Industries, Parth leads efforts in machine vision, industrial automation, and robotics, shaping the future of modern manufacturing.`,
       reverse: false,
     },
   ];
@@ -67,13 +67,13 @@ export default function AboutPage() {
             <div className="pt-16">
               <h1 className="text-4xl font-bold mb-6">About Aseiro Industries</h1>
               <p className="text-gray-700 text-lg mb-4">
-                <strong>Aseiro Industries Pvt Ltd</strong> was founded to help manufacturers adopt Industry 4.0 standards by integrating robotics, machine vision, and advanced automation into production lines...
+                <strong>Aseiro Industries Pvt Ltd</strong> was founded to help manufacturers adopt Industry 4.0 standards by integrating robotics, machine vision, and advanced automation into production lines. Our mission is to eliminate human error, boost productivity, and deliver consistent quality across industrial processes.
               </p>
               <p className="text-gray-700 text-lg mb-4">
-                We bring together the technical innovation of a modern startup and the trusted legacy of <strong>Vinayak Automation Products</strong>...
+                We bring together the technical innovation of a modern startup and the trusted legacy of <strong>Vinayak Automation Products</strong> - a respected name in industrial automation and instrumentation since 2007. With over 17 years of experience and 10,000 clients, Vinayak Automation has sold various products including sensors, drives, encoders, PLCs, HMIs, and VFDs to clients across sectors.
               </p>
               <p className="text-gray-700 text-lg">
-                Aseiro was launched to cater to custom requirements in quality inspection, industrial robotics, and smart automation...
+              Aseiro was launched to cater to custom requirements in quality inspection, industrial robotics, and smart automation, blending new-generation vision systems with time-tested control architectures. We believe in transforming conventional manufacturing into intelligent, self-optimizing factories.
               </p>
             </div>
           </FadeInOnScroll>
@@ -83,10 +83,10 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-10">What Sets Us Apart</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 {[
-                  { icon: FaPuzzlePiece, title: "Custom-Tailored Systems", desc: "We create modular solutions that fit perfectly into your factory setup..." },
-                  { icon: FaTools, title: "End-to-End Support", desc: "From planning and integration to training and maintenance..." },
-                  { icon: FaRobot, title: "Innovative Integration", desc: "We blend machine vision, robotics, and real-time controls..." },
-                  { icon: FaCheckCircle, title: "Proven Track Record", desc: "Over 10,000 clients trust our systems..." },
+                  { icon: FaPuzzlePiece, title: "Custom-Tailored Systems", desc: "We create modular solutions that fit perfectly into your factory setup—whether it's a small upgrade or a full transformation." },
+                  { icon: FaTools, title: "End-to-End Support", desc: "From planning and integration to training and maintenance—we stay with you every step of the way." },
+                  { icon: FaRobot, title: "Innovative Integration", desc: "We blend machine vision, robotics, and real-time controls for faster inspection and lower costs—up to 70% inspection time reduction." },
+                  { icon: FaCheckCircle, title: "Proven Track Record", desc: "Over 10,000 clients trust our systems to deliver reliable performance across industries." },
                 ].map((item, i) => (
                   <FadeInOnScroll key={i} delay={i * 0.1}>
                     <div className="bg-slate-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
@@ -156,19 +156,6 @@ export default function AboutPage() {
               ))}
             </div>
           </FadeInOnScroll>
-
-          <FadeInOnScroll>
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Our Mission & Vision</h2>
-              <p className="text-gray-700 text-lg mb-4">
-                Our mission is to empower Indian manufacturing with advanced automation technologies that meet global standards.
-              </p>
-              <p className="text-gray-700 text-lg">
-                We envision a future where every production line is intelligent, efficient, and free from manual errors.
-              </p>
-            </div>
-          </FadeInOnScroll>
-
         </div>
       </section>
     </PageTransition>
