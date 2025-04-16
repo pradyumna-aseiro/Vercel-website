@@ -62,7 +62,7 @@ export default function AboutPage() {
       image: "/team/team-shriya.png",
       email: "marketing@aseiro.in",
       linkedin: "https://www.linkedin.com/in/shriyaraiagarwal",
-      desc: `Shriya brings over 5 years of experience in marketing, having worked with brands across Europe, the UK, Asia, North America, and the Middle East. She started her journey by running her own agency, working with global clients building strong, creative campaigns. She has also been featured in publications like The Entrepreneurs Ethics and Women in Business Net. She pursued her Master’s in Advertising & Marketing from the University of Leeds. For her, marketing is about the joy of seeing a successful campaign and the learning’s. At Aseiro, Shriya leads our marketing efforts and brand positioning, helping shape how the world sees us. Her goal is to make Aseiro a go-to name in machine vision products and solutions.`,
+      desc: `Shriya brings 5+ years of global marketing experience, having led campaigns across Europe, the UK, Asia, North America, and the Middle East. She began with her own agency, crafting creative strategies for international clients, and has been featured in The Entrepreneurs Ethics and Women in Business Net. A Master’s graduate in Advertising & Marketing from the University of Leeds, she thrives on building impactful campaigns and learning through the process. At Aseiro, Shriya leads marketing and brand strategy, working to make Aseiro a trusted name in machine vision solutions.`,
       reverse: true,
     },
   ];
