@@ -1,102 +1,95 @@
+// app/partner/page.tsx
 "use client";
 
-import CTAButton from "@/components/CTA-button";
+import { FaTools, FaIndustry, FaRobot } from "react-icons/fa";
+import { GiFactory } from "react-icons/gi";
 import PageTransition from "@/components/page-transition";
 import FadeInOnScroll from "@/components/fade-in-on-scroll";
 
 export default function PartnerPage() {
   return (
     <PageTransition>
-      <section className="pt-32 pb-20 px-4 bg-white text-center">
-        <FadeInOnScroll>
-          <h1 className="text-4xl font-bold mb-6">Partner With Aseiro Industries</h1>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
-            Collaborate with us to accelerate digital transformation in Indian manufacturing.
-            We enable you with our innovative machine vision and automation systems to deliver
-            exceptional solutions to your clients.
-          </p>
-        </FadeInOnScroll>
+      <section className="bg-white py-20 px-6 text-left">
+        <div className="max-w-6xl mx-auto space-y-24">
 
-        <FadeInOnScroll delay={0.1}>
-          <h2 className="text-3xl font-semibold mb-8">Why Partner With Us?</h2>
-          <div className="grid gap-6 md:grid-cols-2 max-w-6xl mx-auto text-left">
-            {[
-              {
-                title: "Collaborative Marketing",
-                desc: "Engage in co-branded campaigns, webinars, and exhibitions to grow your audience.",
-              },
-              {
-                title: "Lead Sharing & Referrals",
-                desc: "We route relevant client enquiries to our partners and integrators.",
-              },
-              {
-                title: "Exclusive Training",
-                desc: "Get certified training in machine vision, PLCs, industrial robotics, and more.",
-              },
-              {
-                title: "Preferential Pricing",
-                desc: "Enjoy partner-only discounts on our entire product and solution portfolio.",
-              },
-              {
-                title: "Dedicated Technical Support",
-                desc: "Get priority access to support, integration help, and product documentation.",
-              },
-              {
-                title: "Ready-to-use Resources",
-                desc: "Use our presentation decks, brochures, project templates, and case studies.",
-              },
-            ].map((item, index) => (
-              <FadeInOnScroll key={index} delay={index * 0.1}>
-                <div className="bg-slate-50 p-6 rounded-xl shadow-md hover:shadow-lg transition h-full">
-                  <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
-                  <p className="text-gray-700 text-sm">{item.desc}</p>
-                </div>
-              </FadeInOnScroll>
-            ))}
-          </div>
-        </FadeInOnScroll>
-
-        <FadeInOnScroll delay={0.2}>
-          <div className="mt-20">
-            <h2 className="text-3xl font-semibold mb-6">Who Can Apply?</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm max-w-4xl mx-auto">
-              {[
-                "System Integrators",
-                "OEMs & Machine Builders",
-                "Automation Consultants",
-                "Distributors",
-              ].map((label, i) => (
-                <div key={i} className="bg-white border rounded-lg py-4 px-3 shadow hover:shadow-lg transition">
-                  {label}
-                </div>
-              ))}
+          {/* Hero */}
+          <FadeInOnScroll>
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4">Partner With Aseiro</h1>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                Join our network of automation leaders, system integrators, and resellers
+                to bring machine vision and robotics to every factory floor.
+              </p>
             </div>
-          </div>
-        </FadeInOnScroll>
+          </FadeInOnScroll>
 
-        <FadeInOnScroll delay={0.3}>
-          <div className="mt-20 max-w-3xl mx-auto text-left">
-            <h2 className="text-3xl font-semibold text-center mb-6">How to Get Started</h2>
-            <ol className="list-decimal pl-6 space-y-3 text-gray-700 text-left">
-              <li>Fill out our partner application form</li>
-              <li>We evaluate the fit and synergy</li>
-              <li>Sign our partner onboarding agreement</li>
-              <li>Attend onboarding and training</li>
-              <li>Start growing together 🚀</li>
-            </ol>
-          </div>
-        </FadeInOnScroll>
+          {/* Who Can Apply */}
+          <FadeInOnScroll>
+            <div>
+              <h2 className="text-3xl font-semibold mb-8">Who Can Apply?</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                {[
+                  { icon: <FaTools size={40} />, label: "System Integrators" },
+                  { icon: <FaIndustry size={40} />, label: "Machine Builders" },
+                  { icon: <GiFactory size={40} />, label: "OEMs & Automation Consultants" },
+                  { icon: <FaRobot size={40} />, label: "Robotics Distributors" },
+                ].map((item, index) => (
+                  <div key={index} className="bg-slate-50 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                    <div className="text-blue-600 mb-3">{item.icon}</div>
+                    <p className="text-sm font-medium">{item.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeInOnScroll>
 
-        <FadeInOnScroll delay={0.4}>
-          <div className="mt-16 text-center">
-            <CTAButton
-              href="mailto:partnerships@aseiro.in"
-              text="Become a Partner →"
-              variant="primary"
-              isExternal
-            />
-          </div>
-        </FadeInOnScroll>
+          {/* How to Get Started */}
+          <FadeInOnScroll>
+            <div>
+              <h2 className="text-3xl font-semibold mb-8">How to Get Started</h2>
+              <div className="relative flex justify-between items-start border-l-4 border-blue-600 pl-8 max-w-4xl mx-auto">
+                {[
+                  "Fill our partner application form",
+                  "We evaluate the fit and synergy",
+                  "Sign our onboarding agreement",
+                  "Attend onboarding & training",
+                ].map((step, i) => (
+                  <div key={i} className="relative mb-10 w-1/4 text-center px-2">
+                    <div className="bg-blue-600 text-white w-8 h-8 rounded-full mx-auto mb-2 flex items-center justify-center font-semibold">
+                      {i + 1}
+                    </div>
+                    <p className="text-sm text-gray-700">{step}</p>
+                    {i !== 3 && (
+                      <div className="absolute top-[16px] right-[-5px] w-full h-0.5 bg-blue-300 z-[-1]" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeInOnScroll>
+
+          {/* Why Partner With Us */}
+          <FadeInOnScroll>
+            <div>
+              <h2 className="text-3xl font-semibold mb-6">Why Partner With Aseiro?</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                {[
+                  "Access cutting-edge machine vision systems and robotics.",
+                  "Earn attractive margins and priority support.",
+                  "Be a part of large-scale automation deployments.",
+                  "Collaborate on custom solutions and PoCs.",
+                ].map((point, i) => (
+                  <div
+                    key={i}
+                    className="bg-blue-50 p-6 rounded-xl shadow-sm hover:shadow-md transition"
+                  >
+                    <p className="text-gray-800 font-medium">{point}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeInOnScroll>
+        </div>
       </section>
     </PageTransition>
   );
