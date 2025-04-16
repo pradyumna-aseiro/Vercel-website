@@ -53,7 +53,7 @@ const steps = [
   "Fill out our contact form",
   "We'll schedule a discovery call",
   "Sign onboarding agreement",
-  "Attend training & start building",
+  "Discuss & start building",
 ];
 
 export default function PartnerPage() {
@@ -64,8 +64,9 @@ export default function PartnerPage() {
           <FadeInOnScroll>
             <h1 className="text-4xl font-bold mb-4">Partner With Aseiro Industries</h1>
             <p className="text-lg text-gray-600">
-              Collaborate with us to accelerate digital transformation in manufacturing worldwide. We enable you with our
-              innovative machine vision and automation systems to deliver exceptional solutions to your clients.
+              Collaborate with us to accelerate digital transformation in manufacturing worldwide. Empower your clients 
+              with cutting-edge machine vision and automation solutions, developed to enhance precision, efficiency, and 
+              innovation across industries.
             </p>
           </FadeInOnScroll>
         </div>
