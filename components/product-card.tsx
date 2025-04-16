@@ -18,7 +18,7 @@ export default function ProductCard({
   applications,
 }: ProductCardProps) {
   return (
-    <div className="w-[475px] bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <div className="w-[475px] bg-white rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden">
       <div className="relative w-[475px] h-[400px]">
         <Image
           src={image}
