@@ -56,6 +56,15 @@ export default function AboutPage() {
       desc: `With a strong foundation in Instrumentation and Control Engineering from Vishwakarma Institute of Technology and experience at Vinayak Automation Products, Parth has contributed to PLC programming, 3D modeling, machine vision, and advanced robotics. His work spans IoT-based healthcare devices, energy-harvesting solutions, and voice-controlled robotics, reflected in multiple publications and intellectual property filings. Driven by a passion for automation and innovative problem-solving, he aims to scale next-generation technologies across various industries. At Aseiro Industries, Parth leads efforts in machine vision, industrial automation, and robotics, shaping the future of modern manufacturing.`,
       reverse: false,
     },
+    {
+      name: "Shriya Rai Agarwal",
+      title: "Marketing Expert",
+      image: "/team/team-shriya.png",
+      email: "marketing@aseiro.in",
+      linkedin: "https://www.linkedin.com/in/shriyaraiagarwal",
+      desc: `Shriya brings over 5 years of experience in marketing, having worked with brands across Europe, the UK, Asia, North America, and the Middle East. She started her journey by running her own agency, working with global clients building strong, creative campaigns. She has also been featured in publications like The Entrepreneurs Ethics and Women in Business Net. She pursued her Master’s in Advertising & Marketing from the University of Leeds. For her, marketing is about the joy of seeing a successful campaign and the learning’s. At Aseiro, Shriya leads our marketing efforts and brand positioning, helping shape how the world sees us. Her goal is to make Aseiro a go-to name in machine vision products and solutions.`,
+      reverse: true,
+    },
   ];
 
   return (
