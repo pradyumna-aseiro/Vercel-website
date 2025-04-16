@@ -50,7 +50,7 @@ const partnerTypes = [
 ];
 
 const steps = [
-  "Fill out our partner application",
+  "Fill out our contact form",
   "We'll schedule a discovery call",
   "Sign onboarding agreement",
   "Attend training & start building",
@@ -116,25 +116,23 @@ export default function PartnerPage() {
         <div className="mt-24">
           <FadeInOnScroll>
             <h2 className="text-3xl font-semibold mb-10">How to Get Started</h2>
-            <div className="relative max-w-4xl mx-auto">
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-100 z-0"></div>
-              <div className="relative z-10 flex flex-col gap-10">
+            <div className="max-w-2xl mx-auto space-y-10 relative">
+                <div className="absolute top-0 left-5 w-1 h-full bg-blue-100"></div>
                 {steps.map((step, i) => (
-                  <motion.div
+                    <motion.div
                     key={i}
-                    className="flex items-center gap-6"
-                    initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    className="flex items-start gap-6 relative"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
                     viewport={{ once: true }}
-                  >
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-semibold">
-                      {i + 1}
+                    >
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-semibold relative z-10">
+                        {i + 1}
                     </div>
-                    <p className="text-left text-gray-700 text-sm sm:text-base">{step}</p>
-                  </motion.div>
+                    <div className="text-left text-gray-700 text-base">{step}</div>
+                    </motion.div>
                 ))}
-              </div>
             </div>
           </FadeInOnScroll>
           <FadeInOnScroll>
