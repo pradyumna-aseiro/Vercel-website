@@ -23,32 +23,32 @@ const products = [
 const solutions = [
   {
     title: "Printing, Inspection and Rejection using Machine vision System",
-    image: "/solutions/printing-inspection-rejection.png",
+    image: "/solutions/printing-inspection-rejection-home.png",
     desc: "Tailored solutions for printing inspection, sorting, and rejection of products on a conveyor in a production line using high-speed cameras, sensors, and pneumatics.",
   },
   {
     title: "Dimensional Measurement Systems",
-    image: "/solutions/dimensional-measurement.png",
+    image: "/solutions/dimensional-measurement-home.png",
     desc: "Real-time measurement of product tolerances on manufacturing lines using cameras and optimum lighting.",
   },
   {
     title: "Defect Detection using Machine Vision",
-    image: "/solutions/defect-detection.png",
+    image: "/solutions/defect-detection-home.png",
     desc: "Identify surface defects, cracks, scratches, rust, holes, and misalignments in real time. Ideal for bearings, metal surfaces, castings, and packaging lines.",
   },
   {
     title: "Industrial Automation & Instrumentation",
-    image: "/solutions/plc-hmi-automation.png",
+    image: "/solutions/plc-hmi-automation-home.png",
     desc: "Complete automation solutions using PLCs, HMIs, SCADA, and sensors for process control, monitoring, and data-driven decisions.",
   },
   {
     title: "Industrial Robots for Shopfloor",
-    image: "/solutions/industrial-robots.png",
+    image: "/solutions/industrial-robots-home.png",
     desc: "Custom robotic systems that streamline tasks such as pick & place, assembly, and material handling—enhancing accuracy and safety.",
   },
   {
     title: "Warehouse Automation",
-    image: "/solutions/warehouse-automation.png",
+    image: "/solutions/warehouse-automation-home.png",
     desc: "Mobile robots and smart inventory systems for faster order fulfillment, logistics automation, and reduced manual effort.",
   },
 ];
