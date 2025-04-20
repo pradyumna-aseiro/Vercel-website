@@ -1,9 +1,10 @@
 // app/solutions/page.tsx
+
 "use client";
 
-import ProductCard from "@/components/product-card";
 import { solutions } from "@/data/solutions";
 import PageTransition from "@/components/page-transition";
+import SolutionCard from "@/components/solution-card";
 
 export default function SolutionsPage() {
   return (
@@ -12,13 +13,12 @@ export default function SolutionsPage() {
         <h1 className="text-4xl font-bold mb-12">Our Solutions</h1>
         <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 text-left">
           {solutions.map((solution, index) => (
-            <ProductCard
+            <SolutionCard
               key={index}
               name={solution.name}
-              description={solution.description}
+              slug={solution.slug}
+              shortDescription={solution.shortDescription}
               image={solution.image}
-              features={solution.features}
-              applications={solution.applications}
             />
           ))}
         </div>
