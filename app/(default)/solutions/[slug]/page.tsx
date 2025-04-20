@@ -5,14 +5,21 @@ import FadeInOnScroll from "@/components/fade-in-on-scroll";
 import CTAButton from "@/components/CTA-button";
 import { notFound } from "next/navigation";
 
-interface Props {
+type Props = {
   params: {
     slug: string;
   };
+};
+
+export function generateStaticParams() {
+  return solutions.map((solution) => ({
+    slug: solution.slug,
+  }));
 }
 
 export default function SolutionPage({ params }: Props) {
   const solution = solutions.find((s) => s.slug === params.slug);
+
   if (!solution) return notFound();
 
   return (
@@ -28,10 +35,10 @@ export default function SolutionPage({ params }: Props) {
             <div className="mb-12">
               <Image
                 src={solution.visual}
-                alt={`${solution.name} Visual Flow`}
+                alt={`${solution.name} Flowchart`}
                 width={1200}
-                height={500}
-                className="w-full h-auto rounded-lg shadow"
+                height={600}
+                className="rounded-lg w-full h-auto shadow"
               />
             </div>
           </FadeInOnScroll>
@@ -40,8 +47,8 @@ export default function SolutionPage({ params }: Props) {
             <div className="mb-10">
               <h2 className="text-2xl font-semibold mb-4 text-blue-600">Key Features</h2>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {solution.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
+                {solution.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
                 ))}
               </ul>
             </div>
@@ -51,8 +58,8 @@ export default function SolutionPage({ params }: Props) {
             <div className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-blue-600">Applications</h2>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {solution.applications.map((app, index) => (
-                  <li key={index}>{app}</li>
+                {solution.applications.map((app, i) => (
+                  <li key={i}>{app}</li>
                 ))}
               </ul>
             </div>
@@ -60,7 +67,7 @@ export default function SolutionPage({ params }: Props) {
 
           <FadeInOnScroll>
             <div className="text-center">
-              <CTAButton href="/contact" text="Schedule a Demo" />
+              <CTAButton href="/contact" text="Become a Partner" />
             </div>
           </FadeInOnScroll>
         </div>
