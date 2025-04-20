@@ -4,11 +4,7 @@ import { solutions } from "@/data/solutions";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-interface Props {
-  params: { slug: string };
-}
-
-export default function SolutionDetail({ params }: Props) {
+export default function Page({ params }: { params: { slug: string } }) {
   const solution = solutions.find((s) => s.slug === params.slug);
 
   if (!solution) return notFound();
