@@ -81,15 +81,15 @@ export default function ResourceDetailPage() {
           {/* Solution Overview */}
           <motion.section
             variants={{
-                hidden: { opacity: 0, y: 20 },
-                show: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 20 },
+              show: { opacity: 1, y: 0 },
             }}
-            >
+          >
             <h2 className="text-2xl font-semibold text-blue-600 mb-3">Solution Overview</h2>
             <ul className="list-disc ml-6 text-gray-700 space-y-2">
-                {resource.solutionArchitecture.map((point, index) => (
+              {resource.solutionArchitecture.map((point, index) => (
                 <li key={index}>{point}</li>
-                ))}
+              ))}
             </ul>
           </motion.section>
 
