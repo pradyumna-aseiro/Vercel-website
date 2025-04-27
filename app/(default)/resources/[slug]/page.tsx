@@ -1,107 +1,131 @@
-// app/resources/[slug]/page.tsx
+// app/(default)/resources/[slug]/page.tsx
+
 "use client";
 
 import { resources } from "@/data/resources";
-import { useParams } from "next/navigation";
-import Image from "next/image";
+import { notFound } from "next/navigation";
 import PageTransition from "@/components/page-transition";
-import FadeInOnScroll from "@/components/fade-in-on-scroll";
+import Image from "next/image";
+import { FaCheckCircle } from "react-icons/fa";
 
-export default function ResourceDetailPage() {
-  const { slug } = useParams();
-  const resource = resources.find((r) => r.slug === slug);
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ResourceDetailPage({ params }: Props) {
+  const resource = resources.find((r) => r.slug === params.slug);
 
   if (!resource) {
-    return (
-      <main className="pt-32 pb-20 px-4 bg-slate-50 min-h-screen flex items-center justify-center text-gray-600">
-        <p>Resource not found.</p>
-      </main>
-    );
+    notFound();
   }
 
   return (
     <PageTransition>
-      <main className="pt-32 pb-20 px-4 bg-slate-50">
-        {/* Banner */}
-        {resource.banner && (
-          <div className="w-full max-w-7xl mx-auto mb-12 rounded-xl overflow-hidden shadow-lg">
+      <main className="pt-32 pb-20 px-6 bg-white">
+        <section className="max-w-7xl mx-auto text-left">
+
+          {/* Banner Section */}
+          <h1 className="text-4xl font-bold text-blue-800 mb-6">{resource.title}</h1>
+          <p className="text-gray-700 text-lg mb-10">{resource.description}</p>
+
+          <div className="relative w-full h-80 mb-12 rounded-xl overflow-hidden">
             <Image
               src={resource.banner}
               alt={resource.title}
-              width={1600}
-              height={600}
-              className="w-full h-auto object-cover"
-              priority
+              layout="fill"
+              objectFit="cover"
+              className="rounded-xl"
             />
           </div>
-        )}
 
-        {/* Title and Short Description */}
-        <FadeInOnScroll>
-          <h1 className="text-4xl font-bold text-center mb-6">{resource.title}</h1>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">{resource.shortDescription}</p>
-        </FadeInOnScroll>
-
-        {/* Full Description */}
-        <FadeInOnScroll>
-          <div className="max-w-5xl mx-auto text-gray-700 text-lg leading-relaxed space-y-6 mb-16">
-            {resource.description.split("\n").map((para, i) => (
-              <p key={i}>{para.trim()}</p>
-            ))}
-          </div>
-        </FadeInOnScroll>
-
-        {/* Flowchart */}
-        {resource.flowchart && (
-          <FadeInOnScroll>
-            <div className="max-w-5xl mx-auto mb-16">
-              <Image
-                src={resource.flowchart}
-                alt={`${resource.title} - Flowchart`}
-                width={1200}
-                height={800}
-                className="rounded-xl shadow"
-              />
+          {/* Overview */}
+          <section className="space-y-12">
+            <div>
+              <h2 className="text-3xl font-semibold text-blue-800 mb-4">Project Overview</h2>
+              <p className="text-gray-700">{resource.overview}</p>
             </div>
-          </FadeInOnScroll>
-        )}
 
-        {/* Features */}
-        <FadeInOnScroll>
-          <div className="max-w-5xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-center">Key Features</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base list-disc list-inside">
-              {resource.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-          </div>
-        </FadeInOnScroll>
-
-        {/* Results */}
-        <FadeInOnScroll>
-          <div className="max-w-5xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-center">Results Achieved</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-base list-disc list-inside">
-              {resource.results.map((result, index) => (
-                <li key={index}>{result}</li>
-              ))}
-            </ul>
-          </div>
-        </FadeInOnScroll>
-
-        {/* Video */}
-        {resource.video && (
-          <FadeInOnScroll>
-            <div className="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
-              <video
-                src={resource.video}
-                controls
-                className="w-full h-auto"
-              ></video>
+            {/* Problem Statement */}
+            <div>
+              <h2 className="text-3xl font-semibold text-blue-800 mb-4">Problem Statement</h2>
+              <p className="text-gray-700">{resource.problem}</p>
             </div>
-          </FadeInOnScroll>
-        )}
+
+            {/* Solution Architecture */}
+            <div>
+              <h2 className="text-3xl font-semibold text-blue-800 mb-4">Solution Architecture</h2>
+              <ul className="list-disc ml-6 text-gray-700 space-y-2">
+                {resource.solutionArchitecture.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Flowchart Visual */}
+            {resource.flowchart && (
+              <div>
+                <h2 className="text-3xl font-semibold text-blue-800 mb-4">Flowchart</h2>
+                <div className="relative w-full h-96 bg-gray-100 rounded-xl overflow-hidden">
+                  <Image
+                    src={resource.flowchart}
+                    alt={`${resource.title} Flowchart`}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Key Features */}
+            <section className="py-16">
+              <h2 className="text-3xl font-bold mb-10 text-center text-blue-800">Key Features</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {resource.keyFeatures.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="bg-slate-50 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 flex items-start gap-4"
+                  >
+                    <FaCheckCircle className="text-blue-600 text-2xl shrink-0" />
+                    <p className="text-gray-700">{feature}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Results Achieved */}
+            <section className="py-16">
+              <h2 className="text-3xl font-bold mb-10 text-center text-blue-800">Results Achieved</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {resource.results.map((result, index) => (
+                  <div
+                    key={index}
+                    className="bg-slate-50 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 flex items-start gap-4"
+                  >
+                    <FaCheckCircle className="text-blue-600 text-2xl shrink-0" />
+                    <p className="text-gray-700">{result}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Demo Video */}
+            {resource.video && (
+              <div>
+                <h2 className="text-3xl font-semibold text-blue-800 mb-4">Demo Video</h2>
+                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                  <video controls className="w-full h-full object-cover rounded-xl">
+                    <source src={resource.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            )}
+
+          </section>
+
+        </section>
       </main>
     </PageTransition>
   );

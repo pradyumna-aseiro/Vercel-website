@@ -3,48 +3,36 @@
 export const resources = [
     {
       slug: "printing-inspection-rejection",
-      title: "Printing, Inspection & Rejection",
-      shortDescription: "Real-time print inspection and automatic rejection of defective bottles using machine vision.",
-      thumbnail: "/resources/thumbnails/printing-inspection-rejection-thumbnail.png", // your thumbnail image
-      banner: "/resources/banners/printing-inspection-rejection-banner.png",          // your big top banner image
-      description: `
-  Our Printing, Inspection & Rejection solution uses a combination of online data entry, industrial inkjet printing, high-speed vision inspection, and pneumatic rejection.
-  
-  Operators input the batch number, expiry date, and product code into our online system. This data is sent simultaneously to the industrial printer and our machine vision software.
-  
-  As the bottles move on the conveyor:
-  - Printing is performed on the fly.
-  - The camera captures images of each bottle.
-  - The software verifies the printed data against the master data.
-  - Incorrectly printed bottles are automatically rejected using a pneumatic guided cylinder.
-  
-  This ensures only accurate, high-quality products reach the market.
-      `,
-      features: [
+      title: "Printing, Inspection & Rejection System",
+      shortDescription: "Real-time print inspection and rejection using Hikrobot vision.",
+      description: "A fully automated solution for real-time inspection of printed bottles and intelligent rejection of defective items, using Hikrobot cameras, Vision Master software, and Renu PLC control.",
+      thumbnail: "/resources/printing-inspection-rejection-thumbnail.png",
+      banner: "/resources/printing-inspection-rejection-banner.png",
+      overview: "Our system captures printed data, compares it with master data entered via a web portal, and rejects faulty prints in real-time using pneumatic cylinders controlled by PLC.",
+      problem: "Manual inspection led to human errors, slow production, and undetected misprints. The customer needed a fast, reliable, and error-free system for printing validation.",
+      solutionArchitecture: [
+        "Web portal for operator entry (Batch No, MFG Date, Expiry Date)",
+        "Simultaneous data transfer to printer and vision system",
+        "Hikrobot camera captures printed text on bottles",
+        "Vision Master compares captured data with master database",
+        "PLC triggers pneumatic rejection for incorrect prints",
+      ],
+      keyFeatures: [
         "Online data entry and master data synchronization",
-        "High-speed Hikrobot camera inspection",
         "Industrial Renu PLC and guided cylinder rejection mechanism",
+        "Error-proof manufacturing for labeling and coding",
+        "High-speed Hikrobot camera inspection",
         "Automated good/reject decision-making",
-        "Error-proof manufacturing for labeling and coding"
       ],
       results: [
         "99.8% detection accuracy achieved",
-        "Reduced manual checking by 95%",
         "Improved product traceability",
+        "Enhanced overall production efficiency",
+        "Reduced manual checking by 95%",
         "Faster sorting and inspection speeds",
-        "Enhanced overall production efficiency"
       ],
-      flowchart: "/resources/flowcharts/printing-inspection-rejection-flowchart.png", // flowchart image
-      video: "/resources/videos/printing-inspection-rejection-video.mp4",          // case study video
+      flowchart: "/resources/printing-inspection-rejection-flowchart.png",
+      video: "/resources/printing-inspection-rejection-video.mp4",
     },
-    
-    // ➔ Add more case studies like this structure below as you build them
-    // {
-    //   slug: "dimensional-measurement",
-    //   title: "Dimensional Measurement System",
-    //   shortDescription: "Real-time high-speed dimension checking with machine vision.",
-    //   thumbnail: "/resources/thumbnails/dimensional-measurement-thumbnail.png",
-    //   ...
-    // },
   ];
   
