@@ -1,9 +1,8 @@
-// components/resource-card.tsx
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import FadeInOnScroll from "@/components/fade-in-on-scroll";
+import { motion } from "framer-motion";
 
 interface ResourceCardProps {
   slug: string;
@@ -19,9 +18,14 @@ export default function ResourceCard({
   thumbnail,
 }: ResourceCardProps) {
   return (
-    <FadeInOnScroll>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <Link href={`/resources/${slug}`} className="block group">
-        <div className="rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <div className="rounded-xl overflow-hidden shadow hover:shadow-xl hover:-translate-y-1 transition-transform bg-white">
           <div className="relative w-full h-56">
             <Image
               src={thumbnail}
@@ -31,12 +35,14 @@ export default function ResourceCard({
               className="group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="p-6 bg-white">
-            <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition">{title}</h3>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+              {title}
+            </h3>
             <p className="text-gray-600 text-sm">{shortDescription}</p>
           </div>
         </div>
       </Link>
-    </FadeInOnScroll>
+    </motion.div>
   );
 }

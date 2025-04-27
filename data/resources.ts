@@ -5,11 +5,14 @@ export const resources = [
       slug: "printing-inspection-rejection",
       title: "Printing, Inspection & Rejection System",
       shortDescription: "Real-time print inspection and rejection using Hikrobot vision.",
-      description: "A fully automated solution for real-time inspection of printed bottles and intelligent rejection of defective items, using Hikrobot cameras, Vision Master software, and Renu PLC control.",
+      description:
+        "A fully automated solution for real-time inspection of printed bottles and intelligent rejection of defective items, using Hikrobot cameras, Vision Master software, and Renu PLC control.",
       thumbnail: "/resources/printing-inspection-rejection-thumbnail.png",
       banner: "/resources/printing-inspection-rejection-banner.png",
-      overview: "Our system captures printed data, compares it with master data entered via a web portal, and rejects faulty prints in real-time using pneumatic cylinders controlled by PLC.",
-      problem: "Manual inspection led to human errors, slow production, and undetected misprints. The customer needed a fast, reliable, and error-free system for printing validation.",
+      overview:
+        "Our system captures printed data, compares it with master data entered via a web portal, and rejects faulty prints in real-time using pneumatic cylinders controlled by PLC.",
+      problem:
+        "Manual inspection led to human errors, slow production, and undetected misprints. The customer needed a fast, reliable, and error-free system for printing validation.",
       solutionArchitecture: [
         "Web portal for operator entry (Batch No, MFG Date, Expiry Date)",
         "Simultaneous data transfer to printer and vision system",
