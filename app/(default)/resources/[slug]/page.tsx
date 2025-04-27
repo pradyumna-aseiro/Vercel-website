@@ -2,22 +2,21 @@
 "use client";
 
 import { resources } from "@/data/resources";
-import { notFound } from "next/navigation";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import PageTransition from "@/components/page-transition";
 import FadeInOnScroll from "@/components/fade-in-on-scroll";
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-
-export default function ResourceDetailPage({ params }: Props) {
-  const resource = resources.find((r) => r.slug === params.slug);
+export default function ResourceDetailPage() {
+  const { slug } = useParams();
+  const resource = resources.find((r) => r.slug === slug);
 
   if (!resource) {
-    notFound();
+    return (
+      <main className="pt-32 pb-20 px-4 bg-slate-50 min-h-screen flex items-center justify-center text-gray-600">
+        <p>Resource not found.</p>
+      </main>
+    );
   }
 
   return (
@@ -37,13 +36,13 @@ export default function ResourceDetailPage({ params }: Props) {
           </div>
         )}
 
-        {/* Title */}
+        {/* Title and Short Description */}
         <FadeInOnScroll>
           <h1 className="text-4xl font-bold text-center mb-6">{resource.title}</h1>
           <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">{resource.shortDescription}</p>
         </FadeInOnScroll>
 
-        {/* Description */}
+        {/* Full Description */}
         <FadeInOnScroll>
           <div className="max-w-5xl mx-auto text-gray-700 text-lg leading-relaxed space-y-6 mb-16">
             {resource.description.split("\n").map((para, i) => (

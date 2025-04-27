@@ -1,24 +1,25 @@
 // app/resources/page.tsx
-
 "use client";
 
 import { resources } from "@/data/resources";
-import ResourceCard from "@/components/resource-card";
 import PageTransition from "@/components/page-transition";
+import ResourceCard from "@/components/resource-card";
 
 export default function ResourcesPage() {
   return (
     <PageTransition>
-      <section className="pt-36 pb-20 px-4 bg-slate-50 text-center min-h-screen">
-        <h1 className="text-4xl font-bold mb-6">Our Case Studies & Projects</h1>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-          Explore real-world implementations of our automation and machine vision solutions.
-        </p>
+      <main className="pt-32 pb-20 px-4 bg-slate-50 min-h-screen">
+        <div className="max-w-7xl mx-auto text-center mb-12">
+          <h1 className="text-4xl font-bold mb-4">Case Studies & Resources</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Explore our real-world projects and machine vision automation success stories.
+          </p>
+        </div>
 
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
-          {resources.map((resource, index) => (
+        <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {resources.map((resource) => (
             <ResourceCard
-              key={index}
+              key={resource.slug}
               slug={resource.slug}
               title={resource.title}
               shortDescription={resource.shortDescription}
@@ -26,7 +27,7 @@ export default function ResourcesPage() {
             />
           ))}
         </div>
-      </section>
+      </main>
     </PageTransition>
   );
 }
