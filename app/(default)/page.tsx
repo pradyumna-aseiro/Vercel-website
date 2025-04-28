@@ -6,6 +6,8 @@ import IndustryPartners from "@/components/industry-partners";
 import ContactForm from "@/components/contact-form";
 import FadeInOnScroll from "@/components/fade-in-on-scroll";
 import CTAButton from "@/components/CTA-button";
+import { resources } from "@/data/resources";
+import ResourceCard from "@/components/resource-card";
 
 const products = [
   {
@@ -210,8 +212,24 @@ export default function Home() {
         <section className="py-20 px-4 bg-white text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">Latest Insights</h2>
           <p className="text-gray-600 leading-relaxed tracking-wide mb-8 max-w-3xl mx-auto">
-            News, tutorials, and thought leadership from the world of automation and vision.
+            News, case studies, and real-world machine vision success stories.
           </p>
+
+          <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-left">
+            {resources.slice(0, 3).map((resource) => (
+              <ResourceCard
+                key={resource.slug}
+                slug={resource.slug}
+                title={resource.title}
+                shortDescription={resource.shortDescription}
+                thumbnail={resource.thumbnail}
+              />
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <CTAButton href="/resources" text="View All Resources" />
+          </div>
         </section>
       </FadeInOnScroll>
     </>

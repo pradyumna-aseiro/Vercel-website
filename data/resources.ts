@@ -14,7 +14,7 @@ export const resources = [
       problem:
         "Manual inspection led to human errors, slow production, and undetected misprints. The customer needed a fast, reliable, and error-free system for printing validation.",
       solutionArchitecture: [
-        "Web portal for operator entry (Batch No, MFG Date, Expiry Date, MRP)",
+        "Web portal for operator entry (Batch No, MFG Date, Expiry Date, MRP, e.t.c.)",
         "Simultaneous data transfer to printer and vision system",
         "Hikrobot camera captures printed text on bottles",
         "Vision Master compares captured data with master database",
@@ -31,7 +31,7 @@ export const resources = [
         "99.8% detection accuracy achieved",
         "Improved product traceability",
         "Enhanced overall production efficiency",
-        "Reduced manual checking by 95%",
+        "Reduced manual checking by 100%",
         "Faster sorting and inspection speeds",
       ],
       flowchart: "/resources/flowcharts/printing-inspection-rejection-flowchart.png",
