@@ -9,6 +9,7 @@ export const resources = [
       "A fully automated solution for real-time inspection of printed bottles and intelligent rejection of defective items, using Hikrobot cameras, Vision Master software, and Renu PLC control.",
     thumbnail: "/resources/thumbnails/printing-inspection-rejection-thumbnail.png",
     banner: "/resources/banners/printing-inspection-rejection-banner.png",
+    tags: ["Printing", "Inspection", "Automation"],
     overview:
       "Our system captures printed data, compares it with master data entered via a web portal, and rejects faulty prints in real-time using pneumatic cylinders controlled by PLC. The entire setup is modular, allowing easy repositioning to inspect different types of bottles on a single production line.",
     problem:
@@ -49,6 +50,7 @@ export const resources = [
       "A machine vision solution designed to identify missing tablets in sealed packaging compartments during high-speed pharmaceutical production. The system leverages precision imaging and automated logic to flag and reject faulty packs.",
     thumbnail: "/resources/thumbnails/presence-absence-of-tablets-thumbnail.png",
     banner: "/resources/banners/presence-absence-of-tablets-banner.png",
+    tags: ["Pharma", "Quality Control", "Vision System"],
     overview:
       "This system verifies the presence of tablets inside pre-formed plastic packaging that contains multiple individual pockets. A high-resolution camera with a backlight captures each pack as it moves down the production line. Custom vision software scans for any empty tablet compartments and triggers a pneumatic rejection if a discrepancy is found. Multiple layout templates can be used to adapt to different packaging formats.",
     problem:
@@ -80,7 +82,7 @@ export const resources = [
     ],
     flowchart: "/resources/flowcharts/presence-absence-of-tablets-flowchart.png",
     video: "/resources/videos/presence-absence-of-tablets-video.mp4",
-  },  
+  },
   {
     slug: "bottle-level-inspection",
     title: "Bottle Level Inspection System",
@@ -89,6 +91,7 @@ export const resources = [
       "An industrial vision-based system that detects underfilled or overfilled bottles on a high-speed production line. The solution captures real-time images, evaluates liquid level based on predefined thresholds, and rejects non-compliant units using a pneumatic diverter.",
     thumbnail: "/resources/thumbnails/bottle-level-inspection-thumbnail.png",
     banner: "/resources/banners/bottle-level-inspection-banner.png",
+    tags: ["Bottling", "Inspection", "Automation"],
     overview:
       "The system monitors transparent bottles as they move along the conveyor. A high-speed camera positioned above or beside the line captures the liquid level inside each bottle. Custom software analyzes each frame and determines whether the fill level is within acceptable bounds. If the level is too low or too high, the bottle is flagged for rejection and a pneumatic actuator diverts it from the main line. The system supports dynamic threshold adjustment and visual feedback through a touchscreen interface.",
     problem:
@@ -120,5 +123,5 @@ export const resources = [
     ],
     flowchart: "/resources/flowcharts/bottle-level-inspection-flowchart.png",
     video: "/resources/videos/Bottle-level-inspection-video.mp4",
-  }  
+  },
 ];

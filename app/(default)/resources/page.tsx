@@ -27,14 +27,15 @@ export default function ResourcesPage() {
               key={resource.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <ResourceCard
                 slug={resource.slug}
                 title={resource.title}
                 shortDescription={resource.shortDescription}
                 thumbnail={resource.thumbnail}
+                tags={resource.tags}
               />
             </motion.div>
           ))}
