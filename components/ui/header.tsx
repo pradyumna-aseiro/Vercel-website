@@ -6,6 +6,7 @@ import Logo from "./logo";
 
 export default function Header() {
   const [top, setTop] = useState(true);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -16,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white transition-shadow duration-300">
+    <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${!top ? "shadow-md" : ""}`}>
       {/* Top Bar with Socials, Slogan, Contact */}
       <div className="bg-slate-900 text-white text-sm py-2 px-4 flex justify-between items-center">
         {/* Left Section: Slogan + Social Icons */}
@@ -114,10 +115,43 @@ export default function Header() {
                     Solutions
                   </Link>
                 </li>
-                <li>
-                  <Link className="font-medium text-gray-600 hover:text-gray-900" href="/resources">
-                    Resources
-                  </Link>
+                <li className="relative group">
+                {/* Dropdown Trigger */}
+                <button
+                  className="font-medium text-gray-600 hover:text-gray-900 focus:outline-none"
+                  onMouseEnter={() => setDropdownOpen(true)}
+                  onMouseLeave={() => setDropdownOpen(false)}
+                >
+                  Resources
+                </button>
+
+                  {/* Dropdown Menu */}
+                  {dropdownOpen && (
+                    <div
+                      className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block"
+                      onMouseEnter={() => setDropdownOpen(true)}
+                      onMouseLeave={() => setDropdownOpen(false)}
+                    >
+                      <Link
+                        href="/resources/printing-inspection-rejection"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Printing Inspection & Rejection
+                      </Link>
+                      <Link
+                        href="/resources/presence-absence-of-tablets"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Tablet Presence/Absence Inspection
+                      </Link>
+                      <Link
+                        href="/resources/bottle-level-inspection"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Bottle Level Inspection
+                      </Link>
+                    </div>
+                  )}
                 </li>
                 <li>
                   <Link className="font-medium text-gray-600 hover:text-gray-900" href="/about">
