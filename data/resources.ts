@@ -41,4 +41,44 @@ export const resources = [
     flowchart: "/resources/flowcharts/printing-inspection-rejection-flowchart.png",
     video: "/resources/videos/printing-inspection-rejection-video.mp4",
   },
+  {
+    slug: "presence-absence-of-tablets",
+    title: "Tablet Presence/Absence Inspection System",
+    shortDescription: "Ensuring accurate blister packing with real-time tablet presence detection.",
+    description:
+      "An industrial vision solution designed to detect missing tablets in blister packs on high-speed pharmaceutical production lines. The system uses advanced camera setups and image processing to identify presence or absence anomalies and trigger rejection mechanisms.",
+    thumbnail: "/resources/thumbnails/presence-absence-of-tablets-thumbnail.png",
+    banner: "/resources/banners/presence-absence-of-tablets-banner.png",
+    overview:
+      "This automated inspection system uses a high-resolution industrial camera and backlighting to clearly visualize tablets in blister packs. Each frame is processed in real-time to confirm full tablet presence. Any packs with missing tablets are flagged and ejected from the line using a pneumatic system. The vision software offers configurable templates to match various blister layouts and tablet shapes.",
+    problem:
+      "Manual inspection of blister packs was slow and prone to human error, often allowing defective packs to reach packaging or shipment stages. High-speed lines made consistent manual inspection infeasible, risking regulatory non-compliance and customer dissatisfaction.",
+    solutionArchitecture: [
+      "High-speed conveyor carrying blister packs under inspection station",
+      "Industrial camera with uniform backlight captures top-down view of each pack",
+      "Vision software checks for presence/absence by comparing intensity profiles at each cavity location",
+      "Custom templates for different blister configurations (2x5, 3x4, etc.)",
+      "PLC communicates with vision system and actuates rejection mechanism",
+      "Rejected packs are removed by pneumatic diverter into a separate bin",
+      "User-friendly touchscreen for adjusting camera focus and inspection parameters",
+    ],
+    keyFeatures: [
+      "Real-time detection of missing tablets at up to 60 packs per second",
+      "Consistent image clarity via controlled lighting setup",
+      "Automatic rejection with pneumatic actuator for any defective pack",
+      "Support for multiple blister formats with quick program switching",
+      "Statistical logging of rejection rates and inspection metrics",
+      "Integration-ready with SCADA/MES systems",
+      "Fail-safe alarm for camera disconnect or light failure",
+    ],
+    results: [
+      "Achieved 100% detection rate for tablet absence under test conditions",
+      "Reduced post-packing inspection effort by 95%",
+      "Improved compliance with pharmaceutical quality standards",
+      "Minimal false positives with intelligent intensity threshold tuning",
+      "Boosted operator confidence and line throughput",
+    ],
+    flowchart: "/resources/flowcharts/presence-absence-of-tablets-flowchart.png",
+    video: "/resources/videos/presence-absence-of-tablets.mp4",
+  }  
 ];
